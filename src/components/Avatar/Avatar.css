@@ -1,0 +1,23 @@
+.avatar__img {
+  display: flex !important;
+  overflow: hidden !important;
+  position: relative !important;
+  font-size: 1.25rem !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+  line-height: 1 !important;
+  user-select: none !important;
+  border-radius: 50% !important;
+  justify-content: center !important;
+}
+
+.avatar__small {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.avatar__large {
+  width: 120px !important;
+  height: 120px !important;
+}

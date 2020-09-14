@@ -1,0 +1,50 @@
+{
+  "common": {
+    "title": "Pavadinimas",
+    "description": "Aprašymas",
+    "price": "Kaina",
+    "addToCart": "Į Krepšelį",
+    "update": "Atnaujinti",
+    "delete": "Ištrinti",
+    "emptyCart": "Krepšelis Tuščias!",
+    "total": "Viso",
+    "checkout": "Atsiskaityti",
+    "quantity": "Kiekis",
+    "noOrders": "Nieko Neužsisakėte :("
+  },
+  "menu": {
+    "login": "Prisijungti",
+    "logout": "Atsijungti",
+    "productForm": "Naujas Produktas",
+    "products": "Produktų sąrašas",
+    "category": "Kategorija",
+    "orders": "Užsakymai",
+    "cart": "Krepšelis",
+    "username": "Vartotojas",
+    "password": "Slaptažodis",
+    "register": "Registruotis",
+    "name": "Vardas",
+    "lastName": "Pavardė"
+  },
+  "validations": {
+    "default": "Laukas yra nevalidus",
+    "required": "Laukas \"$t({{label}})\" yra privalomas",
+    "typeError": "Blogas reikšmės tipas",
+    "numberMin": "Lauko \"$t({{label}})\" reikšmė privalo būti didesnė nei {{min}}"
+  },
+
+  "title": {
+    "ourProducts": "Mūsų Produktai",
+    "price": "Kaina:"
+  },
+
+  "footer": {
+    "rights": "Visos teisės saugomos"
+  },
+
+  "accountForm": {
+    "accountSettings": "Jūsų duomenys",
+    "update": "Atnaujinti",
+    "productFrom": "Produkto Forma"
+  }
+}

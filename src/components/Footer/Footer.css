@@ -1,0 +1,40 @@
+.main-footer {
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    /* padding: 00px; */
+      /* position: fixed; */
+      position: relative;
+      color: white;
+      padding: 1rem;
+    /* z-index: 1; */
+  }
+  
+  .footer-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* padding-top: 1rem; */
+  }
+
+  .column {
+    float: left;
+    width: 15%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .rights {
+      margin-bottom: 0.5rem;
+  }
+  

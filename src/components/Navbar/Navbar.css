@@ -1,0 +1,17 @@
+.navbar__flex {
+  display: flex;
+  justify-content: space-evenly !important;
+}
+
+.input__width {
+  width: 77% !important;
+}
+
+.input__container__width {
+  width: 50% !important;
+}
+
+.search__icon__size {
+  color: white !important;
+  font-size: 2rem !important;
+}

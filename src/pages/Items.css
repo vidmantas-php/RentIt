@@ -1,0 +1,32 @@
+.container-fluid .row {
+  padding-top: 0rem !important;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-4 {
+  /* flex: 0 0 25% !important; */
+  flex: 1 0 21% !important;
+  max-width: 21% !important;
+  padding: 1rem;
+}
+
+.loading-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(
+    0deg,
+    rgb(255, 255, 255) 30%,
+    rgba(103, 149, 220, 0.5) 60%,
+    rgba(103, 149, 220, 0.8) 70%,
+    rgb(0, 0, 0, 1) 100%
+  );
+  color: #000; */
+}
+
+.loading .loading-image {
+  height: 100px;
+}
