@@ -6,6 +6,7 @@ import Login from "../../pages/Login/Login";
 import Register from "../../pages/Register/Register";
 import NewItem from "../../pages/NewItem/NewItem";
 import AccountReview from "../../pages/AccountReview/AccountReview";
+import PageRules from "../../pages/PageRules/PageRules";
 
 export default () => (
   <Switch>
@@ -33,6 +34,10 @@ export default () => (
 
     <Route exact path="/accountinfo">
       <AccountReview />
+    </Route>
+
+    <Route exact path="/pagerules">
+      <PageRules />
     </Route>
 
     {/* <Route exact path="/products/:id">

@@ -11,6 +11,7 @@ export default () => {
       <a href="#tools">Tools</a>
       <a href="#about">About</a>
       <a href="#contacts">Contacts</a>
+      <a href="/pagerules">Page Rules</a>
       <a href="/newitem">New Item</a>
       <a href="#more">
         <ExpandMoreIcon />
