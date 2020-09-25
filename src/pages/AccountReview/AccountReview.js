@@ -43,32 +43,33 @@ export default () => {
     <div id="Profile" className="container">
       {/* UPPER INFO */}
       <div className="container">
-        <div className="row">
-          <div>
-            <div className="avatar__position padding__2__rem">
-              <div className="padding__2__rem__right">
-                <AvatarImg size="avatar__large" />
-              </div>
-              <div>
-                <p id="vvardas">Bill Gates</p>
-                <p>Renting scooters</p>
-              </div>
+        <div className="column">
+          <div className=" row row-lg-6">
+            <div
+              className="col-lg-5 avatar__position mt-4"
+              style={{ border: "5px solid black" }}
+            >
+              <AvatarImg size="avatar__large" />
             </div>
+            <div className="col-lg-7 mt-4">
+              <p id="vvardas">Bill Gates</p>
+              <p>Renting scooters</p>
+            </div>
+          </div>
 
-            <div className="number__stars">
-              <div className="padding__2__rem">
-                <button className="btn btn--primary--solid btn--medium">
-                  Susisiekti
-                </button>
-              </div>
-              <div className="padding__2__rem">
-                <FaMapMarkerAlt />
-                <label style={lblStyle}>+37069112634</label>
-              </div>
-              <div className="padding__2__rem">
-                {/* <FaStar /> */}
-                <StarRating />
-              </div>
+          <div className="row row-lg-6 py-3">
+            <div className="px-3">
+              <button className="btn btn--primary--solid btn--medium">
+                Susisiekti
+              </button>
+            </div>
+            <div className="px-3">
+              <FaMapMarkerAlt />
+              <label style={lblStyle}>Vilnius</label>
+            </div>
+            <div className="px-3 d-none d-sm-block">
+              {/* <FaStar /> */}
+              <StarRating />
             </div>
           </div>
         </div>
@@ -97,7 +98,7 @@ export default () => {
             </div>
           </div>
         </div>
-        <div id="itemcardsbox">
+        <div id="itemcardsbox" className="row">
           <Cards />
           <Cards />
         </div>
