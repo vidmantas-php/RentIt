@@ -9,7 +9,7 @@ export default () => {
       <div className="column">
         <div className="row row-lg-2">
           <div className="col-lg-1 col-md-2 d-none d-md-block">
-            <AvatarImg size="avatar__large" />
+            <AvatarImg />
           </div>
           <div className="column col-lg-11 col-md-10">
             <div className="row row-lg-6">

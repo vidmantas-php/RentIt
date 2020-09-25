@@ -20,7 +20,7 @@ export const Button = ({
   onClick,
   buttonStyle,
   buttonSize,
-  redirect
+  redirect,
 }) => {
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
@@ -31,7 +31,7 @@ export const Button = ({
   return (
     <a href={redirect}>
       <button
-        className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+        className={`btnn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
         type={type}
       >

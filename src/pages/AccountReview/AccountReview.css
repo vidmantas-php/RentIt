@@ -14,16 +14,16 @@
 }
 
 .padding__2__rem {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .padding__2__rem__right {
-    padding-right: 2rem;
+  padding-right: 2rem;
 }
 
 .number__stars {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 /* UPPER INFO */
 
@@ -102,5 +102,5 @@
 }
 
 .margin__0__rem {
-    margin: 0rem !important;
+  margin: 0rem !important;
 }

@@ -1,91 +1,89 @@
 :root {
-    --primary: #3f51b5 !important;
-    --warning: #ffd028 !important;
-    --danger: #eb3f27 !important;
-    --success: #75fa83 !important;
-    --white: #fdfdfd !important;
-    --dark: #181717 !important;
-  }
-  
-  .btn {
-    font-family: "Roboto", sans-serif !important;
-    font-weight: 500 !important;
-    line-height: 1.75 !important;
-    border-radius: 4px !important;
-    cursor: pointer !important;
-    letter-spacing: 0.02857em !important;
-    text-transform: uppercase !important;
-    transition: transform 0.3s ease !important;
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-      0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12) !important;
-    background-color: #e0e0e0 !important;
-    margin: 1rem 1rem 1rem 0 !important;
-  }
-  
-  .btn:hover {
-    /* transform: translateY(-3px) !important; */
-    background-color: #303f9f !important;
-  }
-  
-  /* Buttons */
-  
-  .btn--primary--solid {
-    background-color: var(--primary) !important;
-    color: var(--white) !important;
-    border: none !important;
-  }
-  
-  .btn--warning--solid {
-    background-color: var(--warning) !important;
-    color: var(--dark) !important;
-    border: none !important;
-  }
-  
-  .btn--danger--solid {
-    background-color: var(--danger) !important;
-    color: var(--white) !important;
-    border: none !important;
-  }
-  
-  .btn--success--solid {
-    background-color: var(--success) !important;
-    color: var(--white) !important;
-    border: none !important;
-  }
-  
-  .btn--primary--outline {
-    background-color: transparent !important;
-    border: 2px solid var(--primary) !important;
-    color: var(--primary) !important;
-  }
-  
-  .btn--warning--outline {
-    background-color: transparent !important;
-    border: 2px solid var(--warning) !important;
-    color: var(--warning) !important;
-  }
-  
-  .btn--danger--outline {
-    background-color: transparent !important;
-    border: 2px solid var(--danger) !important;
-    color: var(--danger) !important;
-  }
-  
-  .btn--success--outline {
-    background-color: transparent !important;
-    border: 2px solid var(--success) !important;
-    color: var(--success) !important;
-  }
-  
-  /* Button sizes */
-  
-  .btn--medium {
-    padding: 6px 16px !important;
-    font-size: 0.875rem !important;
-  }
-  
-  .btn--large {
-    padding: 12px 24px !important;
-    font-size: 0.925rem !important;
-  }
-  
+  --primary: #3f51b5;
+  --warning: #ffd028;
+  --danger: #eb3f27;
+  --success: #75fa83;
+  --white: #fdfdfd;
+  --dark: #181717;
+}
+
+.btnn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  transition: transform 0.3s ease;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  background-color: #e0e0e0;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.btnn:hover {
+  /* transform: translateY(-3px) !important; */
+  background-color: #303f9f;
+}
+
+/* Buttons */
+
+.btn--primary--solid {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+}
+
+.btn--warning--solid {
+  background-color: var(--warning);
+  color: var(--dark);
+  border: none;
+}
+
+.btn--danger--solid {
+  background-color: var(--danger);
+  color: var(--white);
+  border: none;
+}
+
+.btn--success--solid {
+  background-color: var(--success);
+  color: var(--white);
+  border: none;
+}
+
+.btn--primary--outline {
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn--warning--outline {
+  background-color: transparent;
+  border: 2px solid var(--warning);
+  color: var(--warning);
+}
+
+.btn--danger--outline {
+  background-color: transparent;
+  border: 2px solid var(--danger);
+  color: var(--danger);
+}
+
+.btn--success--outline {
+  background-color: transparent;
+  border: 2px solid var(--success);
+  color: var(--success);
+}
+
+/* Button sizes */
+
+.btn--medium {
+  padding: 6px 16px;
+  font-size: 0.875rem;
+}
+
+.btn--large {
+  padding: 12px 24px;
+  font-size: 0.925rem;
+}

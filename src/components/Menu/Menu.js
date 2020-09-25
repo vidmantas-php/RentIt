@@ -5,7 +5,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 export default () => {
   return (
-    <div class="mainMenu">
+    <div className="mainMenu">
       <a href="/items">Home</a>
       <a href="#cars">Cars</a>
       <a href="#tools">Tools</a>

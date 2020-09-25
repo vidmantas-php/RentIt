@@ -57,7 +57,7 @@ export default () => {
 
             <div className="number__stars">
               <div className="padding__2__rem">
-                <button className="btn btn-outline-secondary margin__0__rem">
+                <button className="btn btn--primary--solid btn--medium">
                   Susisiekti
                 </button>
               </div>
@@ -121,7 +121,8 @@ export default () => {
               </div>
             </div>
           </div>
-
+          <UserReview />
+          <UserReview />
           <UserReview />
         </div>
       </div>
