@@ -1,9 +1,22 @@
 .form__center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .padding__2 {
-    padding: 2rem;
+  padding: 2rem;
+}
+
+.width__select {
+  width: 50ch;
+  margin: 8px !important;
+}
+
+.background__color__forms {
+  background-color: #fff;
+}
+
+.img__width {
+  width: 45ch;
 }
