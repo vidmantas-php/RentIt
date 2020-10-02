@@ -45,13 +45,10 @@ export default () => {
       <div className="container">
         <div className="column">
           <div className=" row row-lg-6">
-            <div
-              className="col-lg-5 avatar__position mt-4"
-              style={{ border: "5px solid black" }}
-            >
+            <div className="col-lg-6 avatar__position mt-4">
               <AvatarImg size="avatar__large" />
             </div>
-            <div className="col-lg-7 mt-4">
+            <div className="col-lg-6 mt-4">
               <p id="vvardas">Bill Gates</p>
               <p>Renting scooters</p>
             </div>

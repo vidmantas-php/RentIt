@@ -47,3 +47,9 @@
 .content-wrap {
   flex: 1;
 }
+
+@media screen and (min-width: 768px) {
+  .searchas-pagr {
+    display: none;
+  }
+}

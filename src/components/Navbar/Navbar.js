@@ -12,7 +12,7 @@ export default () => {
   return (
     <Navbar className="navbar__flex" bg="dark" variant="dark">
       <Navbar.Brand href="/items">Share Things</Navbar.Brand>
-      <Form inline className="input__container__width">
+      <Form inline className="input__container__width searchas-navbare">
         <FormControl
           type="text"
           placeholder="Search..."
@@ -22,7 +22,7 @@ export default () => {
           <SearchIcon className="search__icon__size"></SearchIcon>
         </IconButton>
       </Form>
-      <div className="menu__right">
+      <div>
         {/* <Button redirect="/register">Register</Button>
         <Button redirect="/login">Login</Button> */}
         <AccountInfo />

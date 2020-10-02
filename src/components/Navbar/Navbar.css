@@ -15,3 +15,13 @@
   color: white !important;
   font-size: 2rem !important;
 }
+
+.bg-dark-custom {
+  background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .searchas-navbare {
+    display: none;
+  }
+}

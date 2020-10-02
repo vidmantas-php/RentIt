@@ -61,7 +61,7 @@
 
 .avatar__position {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
 }
 
 #searchas form {
