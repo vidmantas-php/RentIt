@@ -23,6 +23,9 @@ const useStyles = makeStyles((theme) => ({
       marginTop: theme.spacing(2),
     },
   },
+  input: {
+    display: "none",
+  },
 }));
 
 export default function FormPropsTextFields() {
@@ -81,7 +84,36 @@ export default function FormPropsTextFields() {
           variant="outlined"
           className="background__color__forms"
         />
+
         <a href="#image">
+          <input
+            accept="image/*"
+            className={classes.input}
+            id="contained-button-file"
+            multiple
+            type="file"
+          />
+          <label htmlFor="contained-button-file">
+            <Card variant="outlined" className="width__select">
+              <CardContent>
+                Picture
+                <img
+                  src="https://i7.uihere.com/icons/258/694/503/picture-add-87b731e3ad0022412047e14cb6a3f7e5.png"
+                  className="img__width"
+                  alt=""
+                ></img>
+                Click Here to add image
+              </CardContent>
+            </Card>
+          </label>
+          <input
+            accept="image/*"
+            className={classes.input}
+            id="icon-button-file"
+            type="file"
+          />
+        </a>
+        {/* <a href="#image">
           <Card variant="outlined" className="width__select">
             <CardContent>
               Picture
@@ -93,7 +125,7 @@ export default function FormPropsTextFields() {
               Click Here to add image
             </CardContent>
           </Card>
-        </a>
+        </a> */}
         <FormControl
           className="width__select background__color__forms"
           variant="outlined"

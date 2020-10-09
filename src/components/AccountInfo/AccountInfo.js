@@ -128,6 +128,10 @@ export default function AccountInfo() {
         <Link to="/items">
           <MenuItem onClick={handleRegisterClickClose}>Logout</MenuItem>
         </Link>
+
+        <Link to="/newitem">
+          <MenuItem onClick={handleRegisterClickClose}>New Item</MenuItem>
+        </Link>
       </Menu>
     </div>
   );

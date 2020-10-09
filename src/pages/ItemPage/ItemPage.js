@@ -1,7 +1,7 @@
-import React from "react";
+import React  from "react";
 import "./ItemPage.css";
 import { Button } from "../../components/Button/Button";
-
+// import { AppContext } from "../../App";
 import "date-fns";
 import Grid from "@material-ui/core/Grid";
 import DateFnsUtils from "@date-io/date-fns";
@@ -12,6 +12,9 @@ import {
 } from "@material-ui/pickers";
 import { AvatarImg } from "../../components/Avatar/Avatar";
 import StarRating from "../../components/StarRating/StarRating";
+import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import Badge from "@material-ui/core/Badge";
+import IconButton from "@material-ui/core/IconButton";
 
 export default () => {
   const [selectedDate, setSelectedDate] = React.useState(
@@ -21,6 +24,12 @@ export default () => {
   const handleDateChange = (date) => {
     setSelectedDate(date);
   };
+
+  // const { favorites, setFavorites } = useContext(AppContext);
+
+  // const addToFavorites = () => {
+  //   setFavorites(favorites + 1);
+  // };
 
   return (
     <div className="item__page">
@@ -37,6 +46,13 @@ export default () => {
           <div>
             <p className="text-center padding-2-rem">
               <strong>Price: 10$</strong>
+              <IconButton>
+                <Badge
+                // badgeContent={favorites && favorites.length}
+                >
+                  <FavoriteBorderIcon />
+                </Badge>
+              </IconButton>
             </p>
             <p>
               <strong>Description</strong>: Was certainty remaining engrossed

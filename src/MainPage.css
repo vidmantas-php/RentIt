@@ -1,0 +1,15 @@
+.display__flex {
+    display: flex;
+}
+
+.color__set__white {
+    color: white;
+}
+
+.color__set__black {
+    color: black;
+}
+
+.align__all__items__center {
+    align-items: center;
+}
