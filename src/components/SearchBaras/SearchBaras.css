@@ -1,0 +1,76 @@
+.m_containeris {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 100%;
+}
+
+.m_searchas {
+  background: #fff;
+  max-width: 992px;
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.75rem;
+  display: flex;
+  padding-right: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.m_searcho_laukas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.m_searcho_mygtukas,
+.m_miesto_mygtukas {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  font-size: 2rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+  margin-left: 0.25rem;
+}
+
+.m_searcho_mygtukas {
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+
+.m_miesto_mygtukas {
+  border-right: 1px solid rgb(206, 206, 206);
+
+  border-radius: 0.75rem 0 0 0.75rem;
+}
+
+.m_searcho_mygtukas:focus,
+.m_miesto_mygtukas:focus {
+  outline: none;
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 3pt 2pt grey;
+}
+
+.m_searcho_laukas .m_input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  font-size: 16px;
+  padding-left: 1.5rem;
+  padding-right: 38px;
+  color: #6f768d;
+  outline: none;
+  border-radius: 0.75rem 0 0 0.75rem;
+  border-right: 1px solid rgb(206, 206, 206);
+}
+
+@media only screen and (min-width: 992px) {
+  .m_containeris {
+    display: none;
+  }
+}

@@ -38,13 +38,6 @@ p {
   margin-bottom: 0.1rem;
 }
 
-.col-md-4 {
-  flex: 0 0 25%;
-  max-width: 25%;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
-}
-
 body {
   background: radial-gradient(#e5e5e5, #ffff, #e5e5e5);
 }
@@ -59,16 +52,6 @@ body {
 
 .card-text {
   font-size: 0.9rem;
-}
-
-.container-fluid .row {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.col-md-4 {
-  flex: 0 0 25% !important;
-  max-width: 25% !important;
 }
 
 .card-img-top {

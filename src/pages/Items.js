@@ -26,7 +26,7 @@ export default () => {
         ) : (
           items.map((item) => ( */}
         <div>
-          <div className="col-md-4">
+          <div className="kazkas">
             <Card
               // key={item.id}
               imgsrc="https://images.creativemarket.com/0.1.0/ps/7219151/300/200/m2/fpc/wm0/t5nk3muqwpf5pcd5rrgicears5kw3c0oshvlespkdh05fhftkkzlt4vs05j82ts2-.jpg?1572428562&s=209474640e9993046a57673177887050"
@@ -54,7 +54,7 @@ export default () => {
       </div>
       <div className="container-fluid d-flex-justify-content-center">
         <h2 className="text-center">Top Items</h2>
-        <div className="row">
+        <div className="eilute">
           <Cards />
           <Cards />
           <Cards />

@@ -8,6 +8,9 @@ import Content from "./components/Content/Content";
 // import Menu from "./components/Menu/Menu";
 import "./App.css";
 
+import CustomNavbar from "./components/CustomNavbar/CustomNavbar";
+import SearchBaras from "./components/SearchBaras/SearchBaras";
+
 const UserContext = React.createContext(null);
 const AppContext = React.createContext(null);
 
@@ -33,7 +36,8 @@ function App() {
     <AppContext.Provider value={appContextState}>
       <UserContext.Provider value={userContextState}>
         <Router>
-          <Navbar />
+          <CustomNavbar />
+          <SearchBaras />
           {/* <Menu /> */}
           <div className="page-container">
             <div className="content-wrap">

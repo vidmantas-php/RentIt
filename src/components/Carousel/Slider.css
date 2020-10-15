@@ -14,3 +14,9 @@
   height: 30rem;
   /* object-fit: cover; */
 }
+
+@media only screen and (max-width: 992px) {
+  .container__width {
+    display: none;
+  }
+}
