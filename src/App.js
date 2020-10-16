@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/CustomNavbar/CustomNavbar";
 // import { Cards } from "./components/Card/Cards";
 import Footer from "./components/Footer/Footer";
 import Content from "./components/Content/Content";
@@ -43,7 +43,7 @@ function App() {
           <CustomNavbar />
           <SearchBaras />
           {/* <Menu /> */}
-          <FavoritesCounter />
+          {/* <FavoritesCounter /> */}
           <div className="page-container">
             <div className="content-wrap">
               <Content />

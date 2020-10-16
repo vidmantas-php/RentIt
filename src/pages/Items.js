@@ -5,7 +5,8 @@ import Card from "../components/Card/Card";
 // import Loading from "../components/Loading/Loading";
 import "./Items.css";
 import { Slider } from "../components/Carousel/Slider";
-import CategoryCard from "../components/CategoryCard/CategoryCard";
+import { CategoryCard } from "../components/CategoryCard/CategoryCard";
+import "../MainPage.css";
 
 export default () => {
   // const [items, setItems] = useState([]);
@@ -46,9 +47,36 @@ export default () => {
 
   return (
     <div>
-      <div>
-        <CategoryCard/>
-
+      <h2 className="text-center">Categories</h2>
+      <div className="display__flex justify__content__center">
+      <CategoryCard categoryImage="https://i.pinimg.com/originals/e7/ff/65/e7ff654cee54c6f1fe58279cb56c40ab.jpg"
+      categoryName="Cameras"
+      redirect=""
+      />
+      <CategoryCard categoryImage="https://www.crisis-response.com/inc/img/blog/thumbnail/594.jpg"
+      categoryName="Drones"
+      redirect=""
+      />
+      <CategoryCard categoryImage="https://www.taylorguitars.com/sites/default/files/styles/responsive_column/public/TAYLOR-THREECOLUMN-DEALER%20%281%29.jpg?itok=PZ_ids-L"
+      categoryName="Musical Instruments"
+      redirect=""
+      />
+            <CategoryCard categoryImage="https://i.pinimg.com/originals/3a/be/c3/3abec3610afbc69dbb815526a921ffd0.jpg"
+      categoryName="Electric Scooters"
+      redirect=""
+      />
+      <CategoryCard categoryImage="https://images.squarespace-cdn.com/content/v1/5c0bf52cc3c16ad0c27bb250/1547664398847-7WPAFS97S1RUKTPZ2QN4/ke17ZwdGBToddI8pDm48kAf-OpKpNsh_OjjU8JOdDKBZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzAFzFJoCInLPKyj9AG8yKe7-Q2aFvP177fkO9TY_-rz5WoqqTEZpmj4yDEOdwKV68/Giant-Off-Road.jpg"
+      categoryName="Sports"
+      redirect=""
+      />
+            <CategoryCard categoryImage="https://i.pinimg.com/originals/e7/ff/65/e7ff654cee54c6f1fe58279cb56c40ab.jpg"
+      categoryName="Cameras"
+      redirect=""
+      />
+            <CategoryCard categoryImage="https://www.crisis-response.com/inc/img/blog/thumbnail/594.jpg"
+      categoryName="Drones"
+      redirect=""
+      />
         {/* <Slider
           first="https://telefonai.eu/Failai/OLD/gopro-oficialiai-pristate-naujasias-gopro-8-ir-gopro-hero-max-veiksmo-kameras.jpg"
           second="https://social.usq.edu.au/-/media/usq/social/study-tips/pages/desktop-background-collection-banner.ashx"

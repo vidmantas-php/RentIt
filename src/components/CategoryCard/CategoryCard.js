@@ -1,14 +1,19 @@
 import React from 'react'
+import "./CategoryCard.css";
 
-function CategoryCard() {
+export const CategoryCard = ({
+  categoryImage,
+  categoryName,
+  redirect,
+}) => {
     return (
-<div className="card">
-<img src="https://5.imimg.com/data5/TX/VD/DX/SELLER-5537952/nikon-coolpix-b600-digital-camera-500x500.jpg" className="card-img-top" alt="..."/>
-  <div className="card-body">
-    <p className="card-text">Cameras</p>
+      <a href={redirect} style={{ textDecoration: "none" }}>
+<div className="card category__card__width__margin">
+<img src={categoryImage} className="card-img-top" alt={categoryName}/>
+  <div>
+    <p className="card-text text-center">{categoryName}</p>
   </div>
 </div>
+</a>
     )
 };
-
-export default CategoryCard;
