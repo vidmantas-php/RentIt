@@ -11,6 +11,9 @@ import { FavoritesCounter } from "./features/favorites/FavoritesCounter";
 // import { useStateValue } from "./StateProvider";
 import "./App.css";
 
+import CustomNavbar from "./components/CustomNavbar/CustomNavbar";
+import SearchBaras from "./components/SearchBaras/SearchBaras";
+
 const UserContext = React.createContext(null);
 const AppContext = React.createContext(null);
 
@@ -37,7 +40,8 @@ function App() {
     <AppContext.Provider value={appContextState}>
       <UserContext.Provider value={userContextState}>
         <Router>
-          <Navbar />
+          <CustomNavbar />
+          <SearchBaras />
           {/* <Menu /> */}
           <FavoritesCounter />
           <div className="page-container">

@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="main-footer bg-dark">
       <div className="container">
-        <div className="row">
+        <div className="eilute">
           <div className="rights footer-center">
             &copy;{new Date().getFullYear()} All rights reserved
           </div>
