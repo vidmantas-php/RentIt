@@ -5,6 +5,7 @@ import Card from "../components/Card/Card";
 // import Loading from "../components/Loading/Loading";
 import "./Items.css";
 import { Slider } from "../components/Carousel/Slider";
+import CategoryCard from "../components/CategoryCard/CategoryCard";
 
 export default () => {
   // const [items, setItems] = useState([]);
@@ -46,11 +47,13 @@ export default () => {
   return (
     <div>
       <div>
-        <Slider
+        <CategoryCard/>
+
+        {/* <Slider
           first="https://telefonai.eu/Failai/OLD/gopro-oficialiai-pristate-naujasias-gopro-8-ir-gopro-hero-max-veiksmo-kameras.jpg"
           second="https://social.usq.edu.au/-/media/usq/social/study-tips/pages/desktop-background-collection-banner.ashx"
           third="https://nodum.lt/wp-content/uploads/2019/11/cybertruck2.jpg"
-        />
+        /> */}
       </div>
       <div className="container-fluid d-flex-justify-content-center">
         <h2 className="text-center">Top Items</h2>

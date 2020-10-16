@@ -6,12 +6,16 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Content from "./components/Content/Content";
 // import Menu from "./components/Menu/Menu";
+import { FavoritesCounter } from "./features/favorites/FavoritesCounter";
+
+// import { useStateValue } from "./StateProvider";
 import "./App.css";
 
 const UserContext = React.createContext(null);
 const AppContext = React.createContext(null);
 
 function App() {
+  // const [state, dispatch] = useStateValue();
   const [user, setUser] = useState(null);
   const [favorites, setFavorites] = useState(null);
 
@@ -35,6 +39,7 @@ function App() {
         <Router>
           <Navbar />
           {/* <Menu /> */}
+          <FavoritesCounter />
           <div className="page-container">
             <div className="content-wrap">
               <Content />
