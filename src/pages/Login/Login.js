@@ -2,8 +2,21 @@ import React from "react";
 import "./Login.css";
 import { Form } from "react-bootstrap";
 import { Button } from "../../components/Button/Button";
+// import { useStateValue } from "./StateProvider";
 
-export default () => {
+export default (props) => {
+    // const [state, dispatch] = useStateValue();
+
+    const loginToApp = () => {
+
+      //Login
+
+      // dispatch({
+      //   type: "SET_USER",
+      //   user: "Bill Gates"
+      // });
+    };
+
   return (
     <div className="login">
       <Form>
@@ -21,7 +34,7 @@ export default () => {
         {/* <Form.Group controlId="formBasicCheckbox">
               <Form.Check type="checkbox" label="Check me out" />
             </Form.Group> */}
-        <Button variant="primary" type="submit">
+        <Button onClick={loginToApp} variant="primary" type="submit">
           Login
         </Button>
         <Button buttonStyle="btn--danger--solid" type="submit">

@@ -1,20 +1,20 @@
 import HTTP from ".";
 
 export default {
-  fetchItems() {
-    return HTTP.get("/items");
-  },
-  //   fetchProductById(id) {
-  //     return HTTP.get(`/products/${id}`);
-  //   },
-  //   createProduct(product, file) {
-  //     let data = new FormData();
-  //     data.append("file", file);
-  //     data.append("title", product.title);
-  //     data.append("description", product.description);
-  //     data.append("price", product.price);
-  //     return HTTP.post("/products/private/product", data);
-  //   },
+  // fetchItems() {
+  //   return HTTP.get("/items");
+  // },
+    // fetchProductById(id) {
+    //   return HTTP.get(`/products/${id}`);
+    // },
+    // createProduct(product, file) {
+    //   let data = new FormData();
+    //   data.append("file", file);
+    //   data.append("title", product.title);
+    //   data.append("description", product.description);
+    //   data.append("price", product.price);
+    //   return HTTP.post("/products/private/product", data);
+    // },
 
   //   updateProduct(product, file, id) {
   //     let data = new FormData();

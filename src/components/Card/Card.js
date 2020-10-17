@@ -15,7 +15,7 @@ const Card = (props) => {
   return (
     <div>
       <a href={props.redirect} style={{ textDecoration: "none" }}>
-        <div className="card shadow">
+        <div className="card shadow card__width">
           <div className="overflow">
             <img
               src={props.imgsrc}

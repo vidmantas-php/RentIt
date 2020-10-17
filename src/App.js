@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./components/Navbar/Navbar";
+// import Navbar from "./components/CustomNavbar/CustomNavbar";
 // import { Cards } from "./components/Card/Cards";
 import Footer from "./components/Footer/Footer";
 import Content from "./components/Content/Content";
 // import Menu from "./components/Menu/Menu";
+// import { FavoritesCounter } from "./features/favorites/FavoritesCounter";
+
+// import { useStateValue } from "./StateProvider";
 import "./App.css";
 
 import CustomNavbar from "./components/CustomNavbar/CustomNavbar";
@@ -15,6 +18,7 @@ const UserContext = React.createContext(null);
 const AppContext = React.createContext(null);
 
 function App() {
+  // const [state, dispatch] = useStateValue();
   const [user, setUser] = useState(null);
   const [favorites, setFavorites] = useState(null);
 
@@ -39,6 +43,7 @@ function App() {
           <CustomNavbar />
           <SearchBaras />
           {/* <Menu /> */}
+          {/* <FavoritesCounter /> */}
           <div className="page-container">
             <div className="content-wrap">
               <Content />
