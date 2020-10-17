@@ -88,7 +88,7 @@ export default () => {
       <div>
         <div className="display__flex justify__content__center">
           <button
-            className="navbar-toggler"
+            className="navbar-toggler dropdown-toggle margin__bottom__1rem"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent2"
@@ -159,9 +159,43 @@ export default () => {
           <Cards />
           <Cards />
           <Cards />
-          <Cards />
-          <Cards />
         </div>
+      </div>
+
+      <div className="display__flex margin__right__and__left__5rem justify__content__space__around align__all__items__center">
+        <div className="width__30rem font__size__x__large">
+          <h2 className="text-center">Reklama</h2>
+          <p>
+            Join our herd of lenders earning £100s each month lending their
+            belongings and equipment. Lender protection up to £25,000 per item,
+            backed by Hiscox.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://assets.fatllama.com/static/img/rebrand-assets/home-page/info/fat-llama-girl-on-phone.svg"
+            alt="Very beautiful product"
+            className="img-height-width"
+          />
+        </div>
+      </div>
+
+      <div className="display__flex margin__right__and__left__5rem justify__content__space__around align__all__items__center">
+          <div>
+            <img
+              src="https://assets.fatllama.com/static/img/rebrand-assets/home-page/info/fat-llama-guy-on-bubble.svg"
+              alt="Very beautiful product"
+              className="img-height-width"
+            />
+          </div>
+          <div className="width__30rem font__size__x__large">
+          <h2 className="text-center">Reklama</h2>
+          <p>
+            Join our herd of lenders earning £100s each month lending their
+            belongings and equipment. Lender protection up to £25,000 per item,
+            backed by Hiscox.
+          </p>
+          </div>
       </div>
     </div>
   );

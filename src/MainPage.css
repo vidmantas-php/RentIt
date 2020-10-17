@@ -17,3 +17,24 @@
 .justify__content__center {
     justify-content: center;
 }
+
+.margin__bottom__1rem {
+    margin-bottom: 1rem;
+}
+
+.margin__right__and__left__5rem {
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+.width__30rem {
+    width: 30rem;
+}
+
+.justify__content__space__around {
+    justify-content: space-around;
+}
+
+.font__size__x__large {
+    font-size: x-large;
+}
