@@ -1,4 +1,7 @@
+/* SEARCHAS TELEFONAMS!!!! */
+
 .m_containeris {
+  padding-top: 56px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -31,7 +34,7 @@
   border: none;
   outline: none;
   background-color: #fff;
-  font-size: 2rem;
+  font-size: 1rem;
   padding-top: 0;
   padding-bottom: 0;
   text-align: center;

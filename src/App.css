@@ -47,3 +47,9 @@
 .content-wrap {
   flex: 1;
 }
+
+@media only screen and (min-width: 992px) {
+  .page-container {
+    padding-top: 64px;
+  }
+}

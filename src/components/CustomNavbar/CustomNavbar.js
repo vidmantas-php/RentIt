@@ -15,9 +15,7 @@ import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
-
-
-import { FaSearch } from 'react-icons/fa';
+import SearchIcon from '@material-ui/icons/Search';
 
 const useStyles = makeStyles((theme) => ({
     container: {
@@ -42,7 +40,7 @@ export default () => {
 
     return(
         <div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div className="containeris">
     <a class="navbar-brand" href="/items">Share Things</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,10 +83,9 @@ export default () => {
               </a>
             </div>
           </div>
-
-            <Button onClick={handleClickOpen} className="capitalize__button">
+            <button onClick={handleClickOpen} className="btn btn-sm dropdown-toggle">
               Miestas
-            </Button>
+            </button>
             <Dialog
               disableBackdropClick
               disableEscapeKeyDown
@@ -110,7 +107,7 @@ export default () => {
             </Dialog>
           
           <button className="searcho_mygtukas">
-          <FaSearch className="searcho_icona" />
+          <SearchIcon className="searcho_icona"/>
           </button>
     </div>
 

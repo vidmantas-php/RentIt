@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import "./SearchBaras.css";
 
 
-import { FaSearch } from 'react-icons/fa';
+import SearchIcon from '@material-ui/icons/Search';
 
 
  
-  
+//   SEARCHAS TELEFONAMS!!!!!!!
 
 
 export default () => {
@@ -18,7 +18,7 @@ export default () => {
                 <input type="text" className="m_input" placeholder="Search..."></input>
                 </div>
                 <button className="m_miesto_mygtukas">Miestas</button>
-            <button className="m_searcho_mygtukas"><FaSearch /></button>
+            <button className="m_searcho_mygtukas"><SearchIcon /></button>
             </div>
 
 
