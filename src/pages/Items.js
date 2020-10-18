@@ -6,6 +6,7 @@ import Card from "../components/Card/Card";
 import "./Items.css";
 // import { Slider } from "../components/Carousel/Slider";
 import { CategoryCard } from "../components/CategoryCard/CategoryCard";
+import RentalReviews from "../components/RentalReviews/RentalReviews";
 import "../MainPage.css";
 
 export default () => {
@@ -47,7 +48,7 @@ export default () => {
 
   return (
     <div>
-      <h2 className="text-center">Categories</h2>
+      <h2 className="text-center padding__1rem">Categories</h2>
       <div className="display__flex justify__content__center">
         <CategoryCard
           categoryImage="https://i.pinimg.com/originals/e7/ff/65/e7ff654cee54c6f1fe58279cb56c40ab.jpg"
@@ -149,8 +150,10 @@ export default () => {
         /> */}
 
       <div className="container-fluid d-flex-justify-content-center">
-        <h2 className="text-center">Top Items</h2>
+        <h2 className="text-center padding__1rem">Top Items</h2>
         <div className="eilute">
+          <Cards />
+          <Cards />
           <Cards />
           <Cards />
           <Cards />
@@ -181,21 +184,36 @@ export default () => {
       </div>
 
       <div className="display__flex margin__right__and__left__5rem justify__content__space__around align__all__items__center">
-          <div>
-            <img
-              src="https://assets.fatllama.com/static/img/rebrand-assets/home-page/info/fat-llama-guy-on-bubble.svg"
-              alt="Very beautiful product"
-              className="img-height-width"
-            />
-          </div>
-          <div className="width__30rem font__size__x__large">
+        <div>
+          <img
+            src="https://assets.fatllama.com/static/img/rebrand-assets/home-page/info/fat-llama-guy-on-bubble.svg"
+            alt="Very beautiful product"
+            className="img-height-width"
+          />
+        </div>
+        <div className="width__30rem font__size__x__large">
           <h2 className="text-center">Reklama</h2>
           <p>
             Join our herd of lenders earning £100s each month lending their
             belongings and equipment. Lender protection up to £25,000 per item,
             backed by Hiscox.
           </p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h2 className="text-center">Rental reviews</h2>
+        </div>
+        <div className="rental__review">
+          <div className="display__flex">
+            <RentalReviews />
+            <RentalReviews />
           </div>
+          <div className="display__flex">
+            <RentalReviews />
+            <RentalReviews />
+          </div>
+        </div>
       </div>
     </div>
   );

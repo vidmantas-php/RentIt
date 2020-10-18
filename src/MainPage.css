@@ -38,3 +38,24 @@
 .font__size__x__large {
     font-size: x-large;
 }
+
+.rental__review {
+    width: 100%;
+    margin-bottom: 48px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.margin__left__3percent {
+    margin-left: 3%;
+}
+
+.padding__1rem {
+    padding: 1rem;
+}

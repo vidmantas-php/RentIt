@@ -7,7 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Content from "./components/Content/Content";
 // import Menu from "./components/Menu/Menu";
 // import { FavoritesCounter } from "./features/favorites/FavoritesCounter";
-
+// rfce
 // import { useStateValue } from "./StateProvider";
 import "./App.css";
 
