@@ -2,13 +2,10 @@ import React from "react";
 import UserReview from "../../components/UserReview/UserReview";
 import { AvatarImg } from "../../components/Avatar/Avatar";
 import StarRating from "../../components/StarRating/StarRating";
-// import "./components/SortByBtn/dropbtn.css";
 import SortByBtn from "../../components/Buttons/SortByButton/SortByButton";
 import ItemCard from "../../components/Cards/Card/Card";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "jquery/dist/jquery.min.js";
-// import "bootstrap/dist/js/bootstrap.min.js";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+
 import "./AccountReview.css";
 
 export default () => {
@@ -62,7 +59,7 @@ export default () => {
               </button>
             </div>
             <div className="px-3">
-              Icon
+              <LocationOnIcon style={{color: "black"}} />
               <label style={lblStyle}>Vilnius</label>
             </div>
             <div className="px-3 d-none d-sm-block">
