@@ -176,6 +176,42 @@ export default () => {
         </div>
       </div>
 
+      <div className="ad">
+        <div className="flex__column">
+            <img className="img__ad" src="https://assets.fatllama.com/static/img/rebrand-assets/home-page/vp-access/fat-llama-vp-access.svg" alt="" />
+            <div className="margin__left__right__16px">
+                <p>
+                Access More
+                </p>
+                <span>
+                Pursue passions. Get things done
+                </span>
+            </div>
+        </div>
+        <div className="flex__column">
+            <img className="img__ad" src="https://assets.fatllama.com/static/img/rebrand-assets/home-page/vp-access/fat-llama-vp-access.svg" alt="" />
+            <div className="margin__left__right__16px">
+                <p>
+                Access More
+                </p>
+                <span>
+                Pursue passions. Get things done
+                </span>
+            </div>
+        </div>
+        <div className="flex__column">
+            <img className="img__ad" src="https://assets.fatllama.com/static/img/rebrand-assets/home-page/vp-access/fat-llama-vp-access.svg" alt="" />
+            <div className="margin__left__right__16px">
+                <p>
+                Access More
+                </p>
+                <span>
+                Pursue passions. Get things done
+                </span>
+            </div>
+        </div>
+      </div>
+
       <div className="display__flex margin__right__and__left__10rem justify__content__space__around align__all__items__center">
         <div className="width__30rem font__size__x__large">
           <h2 className="text-center padding__1rem">Reklama</h2>
