@@ -11,7 +11,7 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import OutlinedInput from "@material-ui/core/OutlinedInput";
 import InputAdornment from "@material-ui/core/InputAdornment";
-import { Button } from "../../components/Button/Button";
+import { Button } from "../../components/Buttons/Button/Button";
 
 const useStyles = makeStyles((theme) => ({
   root: {

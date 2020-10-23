@@ -1,36 +1,18 @@
-import React, { useState } from "react";
-import { FaStar } from "react-icons/fa";
-import "./StarRating.css";
+import React from 'react';
+import Rating from '@material-ui/lab/Rating';
+import Box from '@material-ui/core/Box';
 
-const StarRating = () => {
-  const [rating, setRating] = useState(5);
-  const [hover, setHover] = useState(null);
+export default function SimpleRating() {
+  const [value, setValue] = React.useState(5);
 
   return (
-    <div>
-      {[...Array(5)].map((star, i) => {
-        const ratingValue = i + 1;
-
-        return (
-          <label>
-            <input
-              type="radio"
-              name="rating"
-              value={ratingValue}
-              onClick={() => setRating(ratingValue)}
-            />
-            <FaStar
-              className="star"
-              color={ratingValue <= (hover || rating) ? "#ffc107" : "#e4e5e9"}
-              size={20}
-              onMouseEnter={() => setHover(ratingValue)}
-              onMouseLeave={() => setHover(null)}
-            />
-          </label>
-        );
-      })}
-    </div>
-  );
-};
-
-export default StarRating;
+      <Box component="fieldset" mb={3} borderColor="transparent">
+        <Rating
+          name="simple-controlled"
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        />
+        </Box>
+  )}

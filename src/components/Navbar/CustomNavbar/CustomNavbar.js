@@ -2,10 +2,8 @@ import React from "react";
 import "./CustomNavbar.css";
 
 import AccountInfo from "../AccountInfo/AccountInfo";
-import IconButton from "@material-ui/core/IconButton";
-import { NavLink } from "react-router-dom";
-import { FavoritesButton } from "../FavoritesButton/FavoritesButton.js";
-import Badge from "@material-ui/core/Badge";
+import { Link } from "react-router-dom";
+import { IconButtons } from "../../Buttons/IconButton/IconButton.js";
 import MailIcon from "@material-ui/icons/Mail";
 import HelpIcon from "@material-ui/icons/Help";
 
@@ -16,6 +14,11 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import SearchIcon from "@material-ui/icons/Search";
+import { useSelector } from 'react-redux';
+import {
+  selectFavorites,
+} from "../../../features/favorites/FavoritesSlice";
+import FavoriteIcon from "@material-ui/icons/Favorite";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -36,13 +39,15 @@ export default () => {
     setOpen(false);
   };
 
+  const products = useSelector(selectFavorites)
+
   return (
     <div>
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div className="containeris">
-          <a class="navbar-brand" href="/items">
+        <Link to="/items" class="navbar-brand">
             Share Things
-          </a>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -78,17 +83,17 @@ export default () => {
                 </button>
                 <div className="dropdown-menu">
                   <a className="dropdown-item" href="#action">
-                    Action
+                    Cameras
                   </a>
                   <a className="dropdown-item" href="#action">
-                    Another action
+                    Sports
                   </a>
                   <a className="dropdown-item" href="#action">
-                    Something else here
+                    Electronics
                   </a>
                   <div className="dropdown-divider"></div>
                   <a className="dropdown-item" href="#action">
-                    Separated link
+                    Drons
                   </a>
                 </div>
               </div>
@@ -125,35 +130,24 @@ export default () => {
 
             <ul className="navbar-nav ml-auto">
               <li class="nav-item active">
-                <FavoritesButton />
+                <IconButtons 
+                linkTo="/favorites"
+                badge={products.filter(product => product.added).length}
+                icon={<FavoriteIcon className="color__set__white" />}
+                />
               </li>
               <li class="nav-item active">
-                <IconButton
-                  aria-label="show 4 new mails"
-                  color="inherit"
-                  variant="outlined"
-                  // onClick={handleClickOpen}
-                >
-                  <Badge
-                    // badgeContent={message}
-                    badgeContent="4"
-                    color="secondary"
-                  >
-                    <MailIcon className="color__set__white" />
-                  </Badge>
-                </IconButton>
+              <IconButtons 
+                linkTo=""
+                badge="3"
+                icon={<MailIcon className="color__set__white" />}
+                />
               </li>
               <li class="nav-item active">
-                <NavLink to="/pagerules">
-                  <IconButton
-                    aria-label="show 4 new mails"
-                    color="inherit"
-                    variant="outlined"
-                    // onClick={handleClickOpen}
-                  >
-                    <HelpIcon className="color__set__white" />
-                  </IconButton>
-                </NavLink>
+              <IconButtons 
+                linkTo="/pagerules"
+                icon={<HelpIcon className="color__set__white" />}
+                />
               </li>
               <li class="nav-item active">
                 <AccountInfo />

@@ -7,7 +7,11 @@ import Register from "../../pages/Register/Register";
 import NewItem from "../../pages/NewItem/NewItem";
 import AccountReview from "../../pages/AccountReview/AccountReview";
 import PageRules from "../../pages/PageRules/PageRules";
+<<<<<<< HEAD
 import MyItems from "../../pages/MyItems/MyItems";
+=======
+import { Favorites } from "../../features/favorites/Favorites"
+>>>>>>> ecffe5546a269c2ed8f288cbbd32cf23f5507f3f
 
 export default () => (
   <Switch>
@@ -41,10 +45,19 @@ export default () => (
       <PageRules />
     </Route>
 
+<<<<<<< HEAD
     <Route exact path="/myitems">
       <MyItems />
     </Route>
 
+=======
+    <Route exact path="/favorites">
+      <Favorites />
+    </Route>
+
+
+
+>>>>>>> ecffe5546a269c2ed8f288cbbd32cf23f5507f3f
     {/* <Route exact path="/products/:id">
       <ProductPage />
     </Route> */}

@@ -1,5 +1,4 @@
 import React from "react";
-import { FaFilter } from "react-icons/fa";
 import "./SortByButton.css";
 
 export default () => {
@@ -13,7 +12,6 @@ export default () => {
         aria-haspopup="true"
         aria-expanded="false"
       >
-        <FaFilter />
         <span className="rusiuotipagal">Rusiuoti pagal</span>
       </button>
       <div

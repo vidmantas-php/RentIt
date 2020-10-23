@@ -63,3 +63,14 @@ body {
   margin-right: 1rem;
   margin-bottom: 1rem;
 }
+
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.card__img__height {
+  height: 150px;
+}

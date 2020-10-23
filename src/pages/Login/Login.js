@@ -1,7 +1,7 @@
 import React from "react";
 import "./Login.css";
 import { Form } from "react-bootstrap";
-import { Button } from "../../components/Button/Button";
+import { Button } from "../../components/Buttons/Button/Button";
 // import { useStateValue } from "./StateProvider";
 
 export default (props) => {

@@ -1,13 +1,19 @@
 import React from "react";
 // import React, { useEffect, useState } from "react";
 // import itemApi from "../api/itemApi";
-import Card from "../components/Card/Card";
+import Card from "../components/Cards/Card/Card";
 // import Loading from "../components/Loading/Loading";
 import "./Items.css";
 // import { Slider } from "../components/Carousel/Slider";
-import { CategoryCard } from "../components/CategoryCard/CategoryCard";
+import { CategoryCard } from "../components/Cards/CategoryCard/CategoryCard";
 import RentalReviews from "../components/RentalReviews/RentalReviews";
 import "../MainPage.css";
+import { useSelector, useDispatch } from 'react-redux';
+
+import {
+  addToFavorites,
+  selectFavorites,
+} from "../features/favorites/FavoritesSlice";
 
 export default () => {
   // const [items, setItems] = useState([]);
@@ -21,27 +27,40 @@ export default () => {
   //     .then(setTimeout(() => setLoading(false), 1000));
   // }, []);
 
+  const products = useSelector(selectFavorites)
+  const dispatch = useDispatch();
+
   function Cards() {
     return (
       <React.Fragment>
-        {/* {isLoading ? (
+        {/* /* {isLoading ? (
           <Loading className="loading loading-page" />
         ) : (
-          items.map((item) => ( */}
+          items.map((item) => ( */ }
+          {products.map((items) => (
         <div>
           <div className="kazkas">
             <Card
               // key={item.id}
-              imgsrc="https://images.creativemarket.com/0.1.0/ps/7219151/300/200/m2/fpc/wm0/t5nk3muqwpf5pcd5rrgicears5kw3c0oshvlespkdh05fhftkkzlt4vs05j82ts2-.jpg?1572428562&s=209474640e9993046a57673177887050"
-              title="Scooter"
-              itemValue="26.3"
-              city="Vilnius"
-              redirect="/item"
+              key={items.id}
+              imgsrc={items.imgsrc}
+              title={items.title}
+              itemValue={items.itemValue}
+              city={items.city}
+              redirect={items.redirect}
+              onClickCard={() => dispatch(addToFavorites(items))}
+              // {`/products/${product.id}`}
+              // imgsrc="https://images.creativemarket.com/0.1.0/ps/7219151/300/200/m2/fpc/wm0/t5nk3muqwpf5pcd5rrgicears5kw3c0oshvlespkdh05fhftkkzlt4vs05j82ts2-.jpg?1572428562&s=209474640e9993046a57673177887050"
+              // title="Scooter"
+              // itemValue="26.3"
+              // city="Vilnius"
+              // redirect="/item"
             />
           </div>
         </div>
-        {/* ))
-        )} */}
+        /* ))
+        )} */
+          ))}
       </React.Fragment>
     );
   }
@@ -154,20 +173,12 @@ export default () => {
         <div className="eilute">
           <Cards />
           <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
         </div>
       </div>
 
-      <div className="display__flex margin__right__and__left__5rem justify__content__space__around align__all__items__center">
+      <div className="display__flex margin__right__and__left__10rem justify__content__space__around align__all__items__center">
         <div className="width__30rem font__size__x__large">
-          <h2 className="text-center">Reklama</h2>
+          <h2 className="text-center padding__1rem">Reklama</h2>
           <p>
             Join our herd of lenders earning £100s each month lending their
             belongings and equipment. Lender protection up to £25,000 per item,
@@ -183,7 +194,7 @@ export default () => {
         </div>
       </div>
 
-      <div className="display__flex margin__right__and__left__5rem justify__content__space__around align__all__items__center">
+      <div className="display__flex margin__right__and__left__10rem justify__content__space__around align__all__items__center">
         <div>
           <img
             src="https://assets.fatllama.com/static/img/rebrand-assets/home-page/info/fat-llama-guy-on-bubble.svg"
