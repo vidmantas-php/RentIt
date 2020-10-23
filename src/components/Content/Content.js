@@ -7,6 +7,7 @@ import Register from "../../pages/Register/Register";
 import NewItem from "../../pages/NewItem/NewItem";
 import AccountReview from "../../pages/AccountReview/AccountReview";
 import PageRules from "../../pages/PageRules/PageRules";
+import { Favorites } from "../../features/favorites/Favorites"
 
 export default () => (
   <Switch>
@@ -39,6 +40,12 @@ export default () => (
     <Route exact path="/pagerules">
       <PageRules />
     </Route>
+
+    <Route exact path="/favorites">
+      <Favorites />
+    </Route>
+
+
 
     {/* <Route exact path="/products/:id">
       <ProductPage />
