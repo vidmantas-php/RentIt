@@ -68,7 +68,7 @@ export default () => {
   return (
     <div>
       <h2 className="text-center padding__1rem">Categories</h2>
-      <div className="display__flex justify__content__center">
+      <div className="containeris">
         <CategoryCard
           categoryImage="https://i.pinimg.com/originals/e7/ff/65/e7ff654cee54c6f1fe58279cb56c40ab.jpg"
           categoryName="Cameras"
@@ -121,7 +121,7 @@ export default () => {
         </div>
 
         <div
-          className="display__flex justify__content__center collapse navbar-collapse"
+          className="containeris collapse navbar-collapse"
           id="navbarSupportedContent2"
         >
           <CategoryCard
