@@ -1,5 +1,4 @@
 import React from "react";
-import { FaMapMarkerAlt } from "react-icons/fa";
 import UserReview from "../../components/UserReview/UserReview";
 import { AvatarImg } from "../../components/Avatar/Avatar";
 import StarRating from "../../components/StarRating/StarRating";
@@ -47,7 +46,6 @@ export default () => {
           <div className=" row row-lg-6">
             <div
               className="col-lg-5 avatar__position mt-4"
-              style={{ border: "5px solid black" }}
             >
               <AvatarImg size="avatar__large" />
             </div>
@@ -57,14 +55,14 @@ export default () => {
             </div>
           </div>
 
-          <div className="row row-lg-6 py-3">
+          <div className="row row-lg-6 py-3 justify-content-center">
             <div className="px-3">
               <button className="btn btn--primary--solid btn--medium">
                 Susisiekti
               </button>
             </div>
             <div className="px-3">
-              <FaMapMarkerAlt />
+              Icon
               <label style={lblStyle}>Vilnius</label>
             </div>
             <div className="px-3 d-none d-sm-block">
