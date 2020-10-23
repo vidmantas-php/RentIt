@@ -132,6 +132,10 @@ export default function AccountInfo() {
         <Link to="/newitem">
           <MenuItem onClick={handleRegisterClickClose}>New Item</MenuItem>
         </Link>
+
+        <Link to="/myItems">
+          <MenuItem onClick={handleRegisterClickClose}>My Items</MenuItem>
+        </Link>
       </Menu>
     </div>
   );
