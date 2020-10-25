@@ -64,7 +64,7 @@
   box-shadow: 0 0 3pt 2pt grey;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .searchas {
     display: none;
   }

@@ -1,73 +1,65 @@
 .display__flex {
-    display: flex;
+  display: flex;
 }
 
 .color__set__white {
-    color: white;
+  color: white;
 }
 
 .color__set__black {
-    color: black;
+  color: black;
 }
 
 .align__all__items__center {
-    align-items: center;
+  align-items: center;
 }
 
 .justify__content__center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .margin__bottom__1rem {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .margin__right__and__left__10rem {
-    margin-right: 10rem;
-    margin-left: 10rem;
+  margin-right: 10rem;
+  margin-left: 10rem;
 }
 
 .width__30rem {
-    width: 30rem;
+  width: 30rem;
 }
 
 .justify__content__space__around {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .font__size__x__large {
-    font-size: x-large;
-}
-
-.rental__review {
-    width: 100%;
-    margin-bottom: 48px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    display: flex;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    justify-content: center;
-    padding-left: 10%;
-    padding-right: 10%;
+  font-size: x-large;
 }
 
 .margin__left__3percent {
-    margin-left: 3%;
+  margin-left: 3%;
 }
 
 .padding__1rem {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .button__color__red {
-    color: red;
+  color: red;
 }
 
 .button__color__black {
+<<<<<<< HEAD
     color: black;
 }
 
 .padding__0 {
     padding: 0%;
 }
+=======
+  color: black;
+}
+>>>>>>> 30e0b78b2f86c6f3250d52956e843caa3ad5ace5

@@ -31,6 +31,7 @@
   height: 100px;
 }
 
+<<<<<<< HEAD
 .ad {
   flex-direction: row;
     -webkit-box-pack: justify;
@@ -60,3 +61,25 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+=======
+.containeris_dydis {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  max-width: 1400px;
+}
+
+/* !!! MP = MAIN PAGE !!! */
+.img-mp-size {
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .eiliskumas-1 {
+    order: 1;
+  }
+}
+>>>>>>> 30e0b78b2f86c6f3250d52956e843caa3ad5ace5
