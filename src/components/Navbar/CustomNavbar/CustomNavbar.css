@@ -10,8 +10,7 @@
 
 .searchas {
   background: #fff;
-  max-width: 900px;
-  width: 40%;
+  width: 500px;
   height: 2.5rem;
   border-radius: 0.75rem;
   display: flex;
@@ -66,6 +65,16 @@
 
 @media only screen and (max-width: 991px) {
   .searchas {
+    display: none;
+  }
+}
+
+.iconu_pavadinimai_navbare {
+  color: #fff;
+}
+
+@media only screen and (min-width: 991px) {
+  .iconu_pavadinimai_navbare {
     display: none;
   }
 }

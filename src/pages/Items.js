@@ -126,7 +126,7 @@ export default () => {
         </div>
 
         <div
-          className="containeris_dydis collapse navbar-collapse"
+          className="containeris_dydis collapse"
           id="navbarSupportedContent2"
         >
           <CategoryCard

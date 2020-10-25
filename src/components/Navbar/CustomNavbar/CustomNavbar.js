@@ -44,7 +44,7 @@ export default () => {
   return (
     <div>
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <div className="containeris">
+        <div className="containeris" style={{border: "2px solid white"}}>
         <Link to="/items" class="navbar-brand">
             Share Things
           </Link>
@@ -135,6 +135,7 @@ export default () => {
                 badge={products.filter(product => product.added).length}
                 icon={<FavoriteIcon className="color__set__white" />}
                 />
+                <span className="iconu_pavadinimai_navbare">Favorites</span>
               </li>
               <li class="nav-item active">
               <IconButtons 
@@ -142,15 +143,18 @@ export default () => {
                 badge="3"
                 icon={<MailIcon className="color__set__white" />}
                 />
+                <span className="iconu_pavadinimai_navbare">Messages</span>
               </li>
               <li class="nav-item active">
               <IconButtons 
                 linkTo="/pagerules"
                 icon={<HelpIcon className="color__set__white" />}
                 />
+                <span className="iconu_pavadinimai_navbare">Info</span>
               </li>
               <li class="nav-item active">
                 <AccountInfo />
+                <span className="iconu_pavadinimai_navbare">My Account</span>
               </li>
             </ul>
           </div>
