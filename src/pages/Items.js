@@ -126,7 +126,7 @@ export default () => {
         </div>
 
         <div
-          className="containeris collapse navbar-collapse"
+          className="containeris_dydis collapse navbar-collapse"
           id="navbarSupportedContent2"
         >
           <CategoryCard
@@ -157,6 +157,11 @@ export default () => {
           <CategoryCard
             categoryImage="https://i.pinimg.com/originals/e7/ff/65/e7ff654cee54c6f1fe58279cb56c40ab.jpg"
             categoryName="Cameras"
+            redirect=""
+          />
+          <CategoryCard
+            categoryImage="https://www.crisis-response.com/inc/img/blog/thumbnail/594.jpg"
+            categoryName="Drones"
             redirect=""
           />
           <CategoryCard
