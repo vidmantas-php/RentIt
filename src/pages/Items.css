@@ -34,9 +34,8 @@
 .ad {
   flex-direction: row;
     -webkit-box-pack: justify;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
-    width: 100%;
 }
 
 .flex__column {
@@ -51,4 +50,13 @@
 .margin__left__right__16px {
   margin-left: 16px;
   margin-top: 16px;
+}
+
+.text__color {
+  color: rgb(118, 118, 118);
+}
+
+.margin__top__bottom__2rem {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
