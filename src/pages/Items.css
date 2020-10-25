@@ -30,3 +30,24 @@
 .loading .loading-image {
   height: 100px;
 }
+
+.containeris_dydis {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  max-width: 1400px;
+}
+
+/* !!! MP = MAIN PAGE !!! */
+.img-mp-size {
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .eiliskumas-1 {
+    order: 1;
+  }
+}

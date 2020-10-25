@@ -68,7 +68,7 @@ export default () => {
   return (
     <div>
       <h2 className="text-center padding__1rem">Categories</h2>
-      <div className="containeris">
+      <div className="containeris_dydis">
         <CategoryCard
           categoryImage="https://i.pinimg.com/originals/e7/ff/65/e7ff654cee54c6f1fe58279cb56c40ab.jpg"
           categoryName="Cameras"
@@ -82,6 +82,11 @@ export default () => {
         <CategoryCard
           categoryImage="https://www.taylorguitars.com/sites/default/files/styles/responsive_column/public/TAYLOR-THREECOLUMN-DEALER%20%281%29.jpg?itok=PZ_ids-L"
           categoryName="Musical Instruments"
+          redirect=""
+        />
+        <CategoryCard
+          categoryImage="https://i.pinimg.com/originals/3a/be/c3/3abec3610afbc69dbb815526a921ffd0.jpg"
+          categoryName="Electric Scooters"
           redirect=""
         />
         <CategoryCard
@@ -175,9 +180,10 @@ export default () => {
           <Cards />
         </div>
       </div>
-
-      <div className="display__flex margin__right__and__left__10rem justify__content__space__around align__all__items__center">
-        <div className="width__30rem font__size__x__large">
+        
+      <div className="row containeris_dydis mb-5">
+        
+        <div className="eiliskumas-1 width__30rem font__size__x__large">
           <h2 className="text-center padding__1rem">Reklama</h2>
           <p>
             Join our herd of lenders earning £100s each month lending their
@@ -189,41 +195,38 @@ export default () => {
           <img
             src="https://assets.fatllama.com/static/img/rebrand-assets/home-page/info/fat-llama-girl-on-phone.svg"
             alt="Very beautiful product"
-            className="img-height-width"
+            className="img-mp-size"
           />
         </div>
       </div>
 
-      <div className="display__flex margin__right__and__left__10rem justify__content__space__around align__all__items__center">
+      <div className="row containeris_dydis mb-5">
         <div>
           <img
             src="https://assets.fatllama.com/static/img/rebrand-assets/home-page/info/fat-llama-guy-on-bubble.svg"
             alt="Very beautiful product"
-            className="img-height-width"
+            className="img-mp-size"
           />
         </div>
         <div className="width__30rem font__size__x__large">
           <h2 className="text-center">Reklama</h2>
           <p>
-            Join our herd of lenders earning £100s each month lending their
+            Join our herd of lenders earning £100s each as month lending their
             belongings and equipment. Lender protection up to £25,000 per item,
             backed by Hiscox.
           </p>
         </div>
       </div>
-      <div>
+
+      <div className="mb-2">
         <div>
           <h2 className="text-center">Rental reviews</h2>
         </div>
-        <div className="rental__review">
-          <div className="display__flex">
+        <div className="containeris_dydis">
             <RentalReviews />
             <RentalReviews />
-          </div>
-          <div className="display__flex">
             <RentalReviews />
             <RentalReviews />
-          </div>
         </div>
       </div>
     </div>
