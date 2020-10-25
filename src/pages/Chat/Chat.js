@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Chat.css";
 import AddCircleIcon from "@material-ui/icons/AddCircle";
-import CardGiftcardIcon from "@material-ui/icons/CardGiftcard";
-import GifIcon from "@material-ui/icons/Gif";
 import EmojiEmotionsIcon from "@material-ui/icons/EmojiEmotions";
 import { useSelector } from "react-redux";
 import db from "../../firebase";
@@ -12,6 +10,7 @@ import Message from "../../components/Chat/Message/Message";
 import { selectChannelId, selectChannelName } from "../../features/app/appSlice";
 import { selectUser } from "../../features/user/userSlice";
 import Sidebar from "../../components/Chat/Sidebar/Sidebar";
+import "../../MainPage.css";
 
 function Chat() {
   const user = useSelector(selectUser);
@@ -44,8 +43,12 @@ function Chat() {
     setInput("");
   };
 
-  function ChatComponent() {
-    return (
+  return (
+
+    <div className="display__flex">
+    {user ? (
+      <>
+        <Sidebar />
         <div className="chat">
         <ChatHeader channelName={channelName} />
   
@@ -60,12 +63,12 @@ function Chat() {
         </div>
   
         <div className="chat__input">
-          <AddCircleIcon fontSize="large" />
-          <form>
+          <AddCircleIcon className="margin__right__09rem" fontSize="large" />
+          <form className="message__border__radius background__color__input display__flex">
             <input
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder={`Message #${channelName}`}
+              placeholder={"Write message..."}
               disabled={!channelId}
             />
             <button
@@ -75,25 +78,10 @@ function Chat() {
             >
               Send Message
             </button>
-          </form>
-  
-          <div className="chat__inputIcons">
-            <CardGiftcardIcon fontSize="large" />
-            <GifIcon fontSize="large" />
             <EmojiEmotionsIcon fontSize="large" />
-          </div>
+          </form>
         </div>
       </div>
-    );
-  }
-
-  return (
-
-    <div className="display__flex">
-    {user ? (
-      <>
-        <Sidebar />
-        <ChatComponent />
       </>
     ) : (
       <h2>You must login</h2>

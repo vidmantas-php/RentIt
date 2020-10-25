@@ -25,15 +25,15 @@ export default (props) => {
           <Form.Control type="password" placeholder="Password" />
           <Form.Text className="text-muted">Forgot password?</Form.Text>
         </Form.Group>
-        {/* <Form.Group controlId="formBasicCheckbox">
+        <Form.Group controlId="formBasicCheckbox">
               <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group> */}
-        {/* <Button variant="primary" type="submit">
+            </Form.Group>
+        <Button variant="primary" type="submit">
           Login
         </Button>
         <Button buttonStyle="btn--danger--solid" type="submit">
           Back
-        </Button> */}
+        </Button>
 
         <Button onClick={signIn}>GOOGLE LOGIN!!!</Button>
       </Form>

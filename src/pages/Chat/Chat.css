@@ -3,7 +3,9 @@
     flex-direction: column;
     flex: 0.75;
     background-color: #363a3f;
-    height: 100vh;
+    height: 82.3vh;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
   }
   
   .chat__messages {
@@ -27,17 +29,18 @@
     justify-content: space-between;
     padding: 15px;
     border-radius: 5px;
-    margin: 20px;
-    border-top: 1px solid gray;
-    background-color: #474b53;
+    /* margin: 20px; */
+    /* border-top: 1px solid gray; */
+    /* background-color: #474b53; */
   }
   
   .chat__input > form > input {
-    padding: 15px;
+    /* padding: 15px; */
     background: transparent;
     width: 100%;
     border: none;
     outline-width: 0;
+    /* color: white; */
     color: white;
     font-size: large;
   }
@@ -53,4 +56,12 @@
   .chat__inputIcons > .MuiSvgIcon-root {
     padding: 5px;
   }
+
+  .background__color__input {
+    background-color: #474b53;
+    padding: 6px 12px 7px;
+  }
   
+  .margin__right__09rem {
+    margin-right: 0.9rem;
+  }

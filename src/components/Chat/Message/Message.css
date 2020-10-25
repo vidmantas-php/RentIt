@@ -1,7 +1,6 @@
 .message {
-    display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 0.1rem;
     color: white;
   }
   
@@ -14,4 +13,12 @@
     margin-left: 20px;
     font-size: x-small;
   }
+
+  .message__background {
+    background-color: lightslategrey;
+    margin-left: 0.9rem;
+    max-width: 85%;
+    padding: 6px 12px 7px;
+  }
+
   

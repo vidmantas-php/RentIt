@@ -58,5 +58,14 @@
 .padding__0 {
     padding: 0%;
 }
-  /* color: black;
-} */
+
+.margin__left__4rem {
+  margin-left: 4rem;
+}
+
+.message__border__radius {
+  border-bottom-left-radius: 1.3em;
+  border-top-left-radius: 1.3em;
+  border-bottom-right-radius: 1.3em;
+  border-top-right-radius: 1.3em;
+}
