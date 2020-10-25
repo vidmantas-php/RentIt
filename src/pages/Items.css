@@ -31,6 +31,36 @@
   height: 100px;
 }
 
+.ad {
+  flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-around;
+    display: flex;
+}
+
+.flex__column {
+  flex-direction: column;
+}
+
+.img__ad {
+  height: 50px;
+  width: 72px;
+}
+
+.margin__left__right__16px {
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
+.text__color {
+  color: rgb(118, 118, 118);
+}
+
+.margin__top__bottom__2rem {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .containeris_dydis {
   display: flex;
   flex-wrap: wrap;

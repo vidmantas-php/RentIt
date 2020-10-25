@@ -14,6 +14,7 @@ import {
   addToFavorites,
   selectFavorites,
 } from "../features/favorites/FavoritesSlice";
+import { Ad } from "../components/Ad/Ad";
 
 export default () => {
   // const [items, setItems] = useState([]);
@@ -170,6 +171,24 @@ export default () => {
             redirect=""
           />
         </div>
+      </div>
+
+      <div className="ad margin__right__and__left__10rem margin__top__bottom__2rem">
+        <Ad 
+        adImg="https://assets.fatllama.com/static/img/rebrand-assets/home-page/vp-access/fat-llama-vp-access.svg"
+        textFirst="Access More"
+        textSecond="Pursue passions. Get things done"
+        />
+                <Ad 
+        adImg="https://assets.fatllama.com/static/img/rebrand-assets/home-page/vp-access/fat-llama-vp-money.svg"
+        textFirst="Save money"
+        textSecond="Buy less. Rent for a fraction of the cost"
+        />
+                <Ad 
+        adImg="https://assets.fatllama.com/static/img/rebrand-assets/home-page/vp-access/fat-llama-vp-light.svg"
+        textFirst="Help the planet"
+        textSecond="Live lighter. Reduce waste"
+        />
       </div>
 
       {/* <Slider

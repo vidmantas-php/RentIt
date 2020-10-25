@@ -9,8 +9,11 @@ import AccountReview from "../../pages/AccountReview/AccountReview";
 import PageRules from "../../pages/PageRules/PageRules";
 import MyItems from "../../pages/MyItems/MyItems";
 import { Favorites } from "../../features/favorites/Favorites";
+import Chat from "../../pages/Chat/Chat";
+import "../../MainPage.css";
 
 export default () => (
+
   <Switch>
     <Redirect exact from="/" to="/items" />
 
@@ -49,6 +52,13 @@ export default () => (
     <Route exact path="/favorites">
       <Favorites />
     </Route>
+
+    <Route exact path="/chat">
+          <Chat />
+
+    </Route>
+
+
 
 
 

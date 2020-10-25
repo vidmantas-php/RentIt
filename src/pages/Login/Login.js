@@ -1,20 +1,14 @@
 import React from "react";
 import "./Login.css";
 import { Form } from "react-bootstrap";
-import { Button } from "../../components/Buttons/Button/Button";
-// import { useStateValue } from "./StateProvider";
+// import { Button } from "../../components/Buttons/Button/Button";
+import { auth, provider } from "../../firebase";
+import { Button } from "@material-ui/core";
 
 export default (props) => {
-    // const [state, dispatch] = useStateValue();
 
-    const loginToApp = () => {
-
-      //Login
-
-      // dispatch({
-      //   type: "SET_USER",
-      //   user: "Bill Gates"
-      // });
+    const signIn = () => {
+      auth.signInWithPopup(provider).catch((error) => alert(error.message));
     };
 
   return (
@@ -34,12 +28,14 @@ export default (props) => {
         {/* <Form.Group controlId="formBasicCheckbox">
               <Form.Check type="checkbox" label="Check me out" />
             </Form.Group> */}
-        <Button onClick={loginToApp} variant="primary" type="submit">
+        {/* <Button variant="primary" type="submit">
           Login
         </Button>
         <Button buttonStyle="btn--danger--solid" type="submit">
           Back
-        </Button>
+        </Button> */}
+
+        <Button onClick={signIn}>GOOGLE LOGIN!!!</Button>
       </Form>
     </div>
   );
