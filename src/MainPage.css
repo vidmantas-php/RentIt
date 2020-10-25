@@ -52,14 +52,11 @@
 }
 
 .button__color__black {
-<<<<<<< HEAD
     color: black;
 }
 
 .padding__0 {
     padding: 0%;
 }
-=======
-  color: black;
-}
->>>>>>> 30e0b78b2f86c6f3250d52956e843caa3ad5ace5
+  /* color: black;
+} */

@@ -138,7 +138,7 @@ export default () => {
               </li>
               <li class="nav-item active">
               <IconButtons 
-                linkTo=""
+                linkTo="/chat"
                 badge="3"
                 icon={<MailIcon className="color__set__white" />}
                 />

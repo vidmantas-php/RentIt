@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/Footer/Footer";
@@ -8,31 +8,33 @@ import Content from "./components/Content/Content";
 import "./App.css";
 import CustomNavbar from "./components/Navbar/CustomNavbar/CustomNavbar";
 import SearchBaras from "./components/Navbar/SearchBaras/SearchBaras";
-
-const UserContext = React.createContext(null);
-const AppContext = React.createContext(null);
+import { useDispatch, useSelector } from "react-redux";
+import { login, logout, selectUser } from "./features/user/userSlice";
+import { auth } from "./firebase";
 
 function App() {
-  const [user, setUser] = useState(null);
-  const [favorites, setFavorites] = useState(null);
+  const dispatch = useDispatch();
+  const user = useSelector(selectUser);
 
-  const userContextState = {
-    user,
-    setUser,
-
-    login: (user) => setUser(user),
-    logout: () => setUser(null),
-    loggedIn: () => !!user,
-  };
-
-  const appContextState = {
-    favorites,
-    setFavorites,
-  };
+  useEffect(() => {
+    auth.onAuthStateChanged((authUser) => {
+      console.log("user is", authUser);
+      if (authUser) {
+        dispatch(
+          login({
+            uid: authUser.uid,
+            photo: authUser.photoURL,
+            email: authUser.email,
+            displayName: authUser.displayName,
+          })
+        );
+      } else {
+        dispatch(logout());
+      }
+    });
+  }, [dispatch]);
 
   return (
-    <AppContext.Provider value={appContextState}>
-      <UserContext.Provider value={userContextState}>
         <Router>
           <CustomNavbar />
           <SearchBaras />
@@ -44,10 +46,6 @@ function App() {
             <Footer />
           </div>
         </Router>
-      </UserContext.Provider>
-    </AppContext.Provider>
   );
 }
 export default App;
-export { UserContext };
-export { AppContext };
