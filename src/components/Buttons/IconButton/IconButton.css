@@ -1,0 +1,11 @@
+.iconu_pavadinimai_navbare {
+  font-size: 1rem;
+  color: white;
+  margin-left: 1rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .iconu_pavadinimai_navbare {
+    display: none;
+  }
+}

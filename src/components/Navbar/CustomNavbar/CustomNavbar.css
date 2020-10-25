@@ -68,13 +68,3 @@
     display: none;
   }
 }
-
-.iconu_pavadinimai_navbare {
-  color: #fff;
-}
-
-@media only screen and (min-width: 991px) {
-  .iconu_pavadinimai_navbare {
-    display: none;
-  }
-}

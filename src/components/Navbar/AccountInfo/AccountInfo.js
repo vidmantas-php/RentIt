@@ -60,6 +60,7 @@ export default function AccountInfo() {
         color="inherit"
       >
         <AccountCircleIcon className="img__size"></AccountCircleIcon>
+        <span className="iconu_pavadinimai_navbare">My Account</span>
       </IconButton>
 
       <Menu
