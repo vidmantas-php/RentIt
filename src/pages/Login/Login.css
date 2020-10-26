@@ -4,3 +4,14 @@
   align-items: center;
   padding: 60px;
 }
+
+.primary__buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.google__button {
+  display: flex;
+  justify-content: center;
+}

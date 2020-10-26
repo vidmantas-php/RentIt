@@ -13,7 +13,7 @@ import {
 import {
     removeFavoritesItem,
     selectFavorites,
-  } from "./FavoritesSlice";
+  } from "../../features/favorites/FavoritesSlice";
 import DeleteIcon from "@material-ui/icons/Delete"
 import { useSelector, useDispatch } from 'react-redux';
 import "../../MainPage.css";

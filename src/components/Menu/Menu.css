@@ -22,3 +22,10 @@
   background: #ddd;
   color: black;
 }
+
+.name__color {
+  color: white;
+  right: 4rem;
+  position: absolute;
+  margin-top: 0.8rem;
+}

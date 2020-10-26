@@ -3,6 +3,7 @@ import "./Card.css";
 import { AvatarImg } from "../../Avatar/Avatar";
 // import { Slider } from "../Carousel/Slider";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+// import FavoriteIcon from "@material-ui/icons/Favorite";
 import IconButton from "@material-ui/core/IconButton";
 import { Link } from "react-router-dom";
 
@@ -51,6 +52,7 @@ const Card = (props) => {
                 onClick={props.onClickCard}
               >
                 <FavoriteBorderIcon/>
+                {/* <FavoriteIcon /> */}
               </IconButton>
               {/* font-size: 2rem;
     color: darkgray; */}

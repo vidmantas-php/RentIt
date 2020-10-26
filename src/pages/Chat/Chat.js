@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Chat.css";
 import AddCircleIcon from "@material-ui/icons/AddCircle";
-import EmojiEmotionsIcon from "@material-ui/icons/EmojiEmotions";
+import SendIcon from '@material-ui/icons/Send';
 import { useSelector } from "react-redux";
 import db from "../../firebase";
 import firebase from "firebase";
@@ -63,7 +63,7 @@ function Chat() {
         </div>
   
         <div className="chat__input">
-          <AddCircleIcon className="margin__right__09rem" fontSize="large" />
+          <AddCircleIcon className="margin__right__09rem icons__color" fontSize="large" />
           <form className="message__border__radius background__color__input display__flex">
             <input
               value={input}
@@ -78,7 +78,7 @@ function Chat() {
             >
               Send Message
             </button>
-            <EmojiEmotionsIcon fontSize="large" />
+            <SendIcon className="icons__color" />
           </form>
         </div>
       </div>

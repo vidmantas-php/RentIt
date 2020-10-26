@@ -8,7 +8,7 @@ import NewItem from "../../pages/NewItem/NewItem";
 import AccountReview from "../../pages/AccountReview/AccountReview";
 import PageRules from "../../pages/PageRules/PageRules";
 import MyItems from "../../pages/MyItems/MyItems";
-import { Favorites } from "../../features/favorites/Favorites";
+import { Favorites } from "../../pages/Favorites/Favorites";
 import Chat from "../../pages/Chat/Chat";
 import "../../MainPage.css";
 

@@ -4,7 +4,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import AddIcon from "@material-ui/icons/Add";
 import Avatar from "@material-ui/core/Avatar";
 import { useSelector } from "react-redux";
-import db, { auth } from "../../../firebase";
+import db from "../../../firebase";
 import SidebarChannel from "../SidebarChannel/SidebarChannel";
 import { selectUser } from "../../../features/user/userSlice";
 
@@ -36,7 +36,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar__top">
-        <h5>Tech Support</h5>
+        <h5>Chats</h5>
         <ExpandMoreIcon />
       </div>
       <div className="sidebar__channels">
@@ -58,7 +58,7 @@ function Sidebar() {
         </div>
       </div>
       <div className="sidebar__profile">
-        <Avatar onClick={() => auth.signOut()} src={user.photo} />
+        <Avatar src={user.photo} />
         <div className="sidebar__profileInfo">
           <h5>{user.displayName}</h5>
           {/* <p>#{user.uid.substring(0, 5)}</p> */}

@@ -14,6 +14,7 @@ import Dialog from "@material-ui/core/Dialog";
 // import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
+import { auth } from "../../../firebase";
 // import DialogTitle from "@material-ui/core/DialogTitle";
 // import "./Login.css";
 // import { Form } from "react-bootstrap";
@@ -127,16 +128,16 @@ export default function AccountInfo() {
           <MenuItem onClick={handleRegisterClickClose}>My account</MenuItem>
         </Link>
         <Link to="/items">
-          <MenuItem onClick={handleRegisterClickClose}>Logout</MenuItem>
+          <MenuItem onClick={() => auth.signOut()}>Logout</MenuItem>
         </Link>
 
-        <Link to="/newitem">
+        {/* <Link to="/newitem">
           <MenuItem onClick={handleRegisterClickClose}>New Item</MenuItem>
         </Link>
 
         <Link to="/myItems">
           <MenuItem onClick={handleRegisterClickClose}>My Items</MenuItem>
-        </Link>
+        </Link> */}
       </Menu>
     </div>
   );

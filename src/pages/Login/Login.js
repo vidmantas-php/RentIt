@@ -6,10 +6,9 @@ import { auth, provider } from "../../firebase";
 import { Button } from "@material-ui/core";
 
 export default (props) => {
-
-    const signIn = () => {
-      auth.signInWithPopup(provider).catch((error) => alert(error.message));
-    };
+  const signIn = () => {
+    auth.signInWithPopup(provider).catch((error) => alert(error.message));
+  };
 
   return (
     <div className="login">
@@ -26,16 +25,28 @@ export default (props) => {
           <Form.Text className="text-muted">Forgot password?</Form.Text>
         </Form.Group>
         <Form.Group controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group>
-        <Button variant="primary" type="submit">
-          Login
-        </Button>
-        <Button buttonStyle="btn--danger--solid" type="submit">
-          Back
-        </Button>
-
-        <Button onClick={signIn}>GOOGLE LOGIN!!!</Button>
+          <Form.Check type="checkbox" label="Accept Rules" />
+        </Form.Group>
+        <div>
+          <div className="primary__buttons">
+            <Button variant="contained" color="primary" type="submit">
+              Login
+            </Button>
+            <Button
+              variant="contained"
+              color="secondary"
+              buttonStyle="btn--danger--solid"
+              type="submit"
+            >
+              Back
+            </Button>
+          </div>
+          <div className="google__button">
+            <Button variant="outlined" color="primary" onClick={signIn}>
+              GOOGLE LOGIN!!!
+            </Button>
+          </div>
+        </div>
       </Form>
     </div>
   );

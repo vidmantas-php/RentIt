@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/Footer/Footer";
 import Content from "./components/Content/Content";
-// import Menu from "./components/Menu/Menu";
+import Menu from "./components/Menu/Menu";
 // rfce
 import "./App.css";
 import CustomNavbar from "./components/Navbar/CustomNavbar/CustomNavbar";
@@ -35,17 +35,25 @@ function App() {
   }, [dispatch]);
 
   return (
-        <Router>
-          <CustomNavbar />
-          <SearchBaras />
-          {/* <Menu /> */}
-          <div className="page-container">
-            <div className="content-wrap">          
-              <Content />
-            </div>
-            <Footer />
-          </div>
-        </Router>
+    <Router>
+      <CustomNavbar />
+      <SearchBaras />
+      <div className="page-container">
+        <div className="content-wrap">
+        {user ? (
+        <>
+          <Menu 
+          displayName={user.displayName}
+          />
+        </>
+      ) : (
+        <></>
+      )}
+          <Content />
+        </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 export default App;
