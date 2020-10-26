@@ -1,7 +1,5 @@
 import React from "react";
 import "./AccountInfo.css";
-// import { Form } from "react-bootstrap";
-// import { Button } from "../../components/Button/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
@@ -9,19 +7,17 @@ import IconButton from "@material-ui/core/IconButton";
 import { Link } from "react-router-dom";
 import Login from "../../../pages/Login/Login";
 import Register from "../../../pages/Register/Register";
-// import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
-// import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import { auth } from "../../../firebase";
-// import DialogTitle from "@material-ui/core/DialogTitle";
-// import "./Login.css";
-// import { Form } from "react-bootstrap";
-// import { Button } from "../../components/Button/Button";
+import { useSelector } from "react-redux";
+import { selectUser } from "../../../features/user/userSlice";
 
 export default function AccountInfo() {
   const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const user = useSelector(selectUser);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -71,73 +67,50 @@ export default function AccountInfo() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        {/* <Link to="/login"> */}
-        <MenuItem onClick={handleClickOpen}>Login</MenuItem>
-        <div>
-          <Dialog
-            open={open}
-            onClose={handleClickClose}
-            aria-labelledby="alert-dialog-title"
-            aria-describedby="alert-dialog-description"
-          >
-            {/* <DialogTitle id="alert-dialog-title">{"Login"}</DialogTitle> */}
-            <DialogContent>
-              <DialogContentText id="alert-dialog-description">
-                <Login />
-              </DialogContentText>
-            </DialogContent>
-            {/* <DialogActions>
-              <Button onClick={handleClickClose} color="primary">
-                Login
-              </Button>
-              <Button onClick={handleClickClose} color="primary" autoFocus>
-                Back
-              </Button>
-            </DialogActions> */}
-          </Dialog>
-        </div>
-        {/* </Link> */}
-        {/* <Link to="/register"> */}
-        <MenuItem onClick={handleRegisterClickOpen}>Register</MenuItem>
+        {user ? (
+          <>
+            {/* <Link to="/accountinfo">
+              <MenuItem onClick={handleRegisterClickClose}>My account</MenuItem>
+            </Link> */}
+            <Link to="/items">
+              <MenuItem onClick={() => auth.signOut()}>Logout</MenuItem>
+            </Link>
+          </>
+        ) : (
+          <>
+          <MenuItem onClick={handleClickOpen}>Login</MenuItem>
+            <div>
+              <Dialog
+                open={open}
+                onClose={handleClickClose}
+                aria-labelledby="alert-dialog-title"
+                aria-describedby="alert-dialog-description"
+              >
+                <DialogContent>
+                  <DialogContentText id="alert-dialog-description">
+                    <Login />
+                  </DialogContentText>
+                </DialogContent>
+              </Dialog>
+            </div>
+            <MenuItem onClick={handleRegisterClickOpen}>Register</MenuItem>
 
-        <div>
-          <Dialog
-            open={openRegister}
-            onClose={handleRegisterClickClose}
-            aria-labelledby="alert-dialog-title"
-            aria-describedby="alert-dialog-description"
-          >
-            {/* <DialogTitle id="alert-dialog-title">{"Login"}</DialogTitle> */}
-            <DialogContent>
-              <DialogContentText id="alert-dialog-description">
-                <Register />
-              </DialogContentText>
-            </DialogContent>
-            {/* <DialogActions>
-              <Button onClick={handleClickClose} color="primary">
-                Login
-              </Button>
-              <Button onClick={handleClickClose} color="primary" autoFocus>
-                Back
-              </Button>
-            </DialogActions> */}
-          </Dialog>
-        </div>
-        {/* </Link> */}
-        <Link to="/accountinfo">
-          <MenuItem onClick={handleRegisterClickClose}>My account</MenuItem>
-        </Link>
-        <Link to="/items">
-          <MenuItem onClick={() => auth.signOut()}>Logout</MenuItem>
-        </Link>
-
-        {/* <Link to="/newitem">
-          <MenuItem onClick={handleRegisterClickClose}>New Item</MenuItem>
-        </Link>
-
-        <Link to="/myItems">
-          <MenuItem onClick={handleRegisterClickClose}>My Items</MenuItem>
-        </Link> */}
+            <div>
+              <Dialog
+                open={openRegister}
+                onClose={handleRegisterClickClose}
+                aria-labelledby="alert-dialog-title"
+                aria-describedby="alert-dialog-description"
+              >
+                <DialogContent>
+                  <DialogContentText id="alert-dialog-description">
+                    <Register />
+                  </DialogContentText>
+                </DialogContent>
+              </Dialog>
+            </div>
+          </>
+        )}
       </Menu>
     </div>
   );
