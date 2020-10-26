@@ -50,6 +50,7 @@ export default function AccountInfo() {
   return (
     <div>
       <IconButton
+        style={{ outline: "none" }}
         edge="end"
         aria-controls="simple-menu"
         aria-haspopup="true"
@@ -78,7 +79,7 @@ export default function AccountInfo() {
           </>
         ) : (
           <>
-          <MenuItem onClick={handleClickOpen}>Login</MenuItem>
+            <MenuItem onClick={handleClickOpen}>Login</MenuItem>
             <div>
               <Dialog
                 open={open}

@@ -12,9 +12,6 @@ function Message({ timestamp, user, message }) {
         </span>
         <p className="margin__left__4rem padding__0 message__font__size__12px">
           {user.displayName}
-          {/* <span className="message__timestamp">
-                    {new Date(timestamp?.toDate()).toUTCString()}
-                    </span> */}
         </p>
         <div className="display__flex align__all__items__center">
           <Avatar src={user.photo} className="avatar__size"/>

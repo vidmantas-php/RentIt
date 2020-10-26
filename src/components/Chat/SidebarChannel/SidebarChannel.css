@@ -7,8 +7,9 @@
     display: flex;
     padding-left: 15px;
     align-items: center;
-    background-color: #2f3135;
-    color: gray;
+    background-color: aliceblue;
+    /* border-right: 1px solid black; */
+    color: black;
     cursor: pointer;
   }
   

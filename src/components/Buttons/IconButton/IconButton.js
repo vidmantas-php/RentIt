@@ -9,7 +9,7 @@ export const IconButtons = (props) => {
 
   return (
     <Link to={props.linkTo} style={{ textDecoration: "none" }}>
-    <IconButton>
+    <IconButton style={{outline: 'none'}}>
       <Badge
         badgeContent={props.badge}
         color="secondary"

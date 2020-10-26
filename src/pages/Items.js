@@ -8,13 +8,15 @@ import "./Items.css";
 import { CategoryCard } from "../components/Cards/CategoryCard/CategoryCard";
 import RentalReviews from "../components/RentalReviews/RentalReviews";
 import "../MainPage.css";
-import { useSelector, useDispatch } from 'react-redux';
-
+import { useSelector, useDispatch } from "react-redux";
+import FavoriteIcon from "@material-ui/icons/Favorite";
 import {
   addToFavorites,
   selectFavorites,
+  removeFavoritesItem
 } from "../features/favorites/FavoritesSlice";
 import { Ad } from "../components/Ad/Ad";
+import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 
 export default () => {
   // const [items, setItems] = useState([]);
@@ -28,40 +30,45 @@ export default () => {
   //     .then(setTimeout(() => setLoading(false), 1000));
   // }, []);
 
-  const products = useSelector(selectFavorites)
+  const products = useSelector(selectFavorites);
   const dispatch = useDispatch();
 
   function Cards() {
     return (
       <React.Fragment>
-        {/* /* {isLoading ? (
-          <Loading className="loading loading-page" />
-        ) : (
-          items.map((item) => ( */ }
-          {products.map((items) => (
-        <div>
-          <div className="kazkas">
-            <Card
-              // key={item.id}
-              key={items.id}
-              imgsrc={items.imgsrc}
-              title={items.title}
-              itemValue={items.itemValue}
-              city={items.city}
-              redirect={items.redirect}
-              onClickCard={() => dispatch(addToFavorites(items))}
-              // {`/products/${product.id}`}
-              // imgsrc="https://images.creativemarket.com/0.1.0/ps/7219151/300/200/m2/fpc/wm0/t5nk3muqwpf5pcd5rrgicears5kw3c0oshvlespkdh05fhftkkzlt4vs05j82ts2-.jpg?1572428562&s=209474640e9993046a57673177887050"
-              // title="Scooter"
-              // itemValue="26.3"
-              // city="Vilnius"
-              // redirect="/item"
-            />
+        {products.map((items) => (
+          <div>
+            <div className="kazkas">
+              {items.added ? (
+                <>
+                  <Card
+                    key={items.id}
+                    imgsrc={items.imgsrc}
+                    title={items.title}
+                    itemValue={items.itemValue}
+                    city={items.city}
+                    redirect={items.redirect}
+                    onClickCard={() => dispatch(removeFavoritesItem(items))}
+                    favIcon={<FavoriteIcon className="favorites__red" />}
+                  />
+                </>
+              ) : (
+                <>
+                  <Card
+                    key={items.id}
+                    imgsrc={items.imgsrc}
+                    title={items.title}
+                    itemValue={items.itemValue}
+                    city={items.city}
+                    redirect={items.redirect}
+                    onClickCard={() => dispatch(addToFavorites(items))}
+                    favIcon={<FavoriteBorderIcon />}
+                  />
+                </>
+              )}
+            </div>
           </div>
-        </div>
-        /* ))
-        )} */
-          ))}
+        ))}
       </React.Fragment>
     );
   }
@@ -174,20 +181,20 @@ export default () => {
       </div>
 
       <div className="ad margin__right__and__left__10rem margin__top__bottom__2rem">
-        <Ad 
-        adImg="https://assets.fatllama.com/static/img/rebrand-assets/home-page/vp-access/fat-llama-vp-access.svg"
-        textFirst="Access More"
-        textSecond="Pursue passions. Get things done"
+        <Ad
+          adImg="https://assets.fatllama.com/static/img/rebrand-assets/home-page/vp-access/fat-llama-vp-access.svg"
+          textFirst="Access More"
+          textSecond="Pursue passions. Get things done"
         />
-                <Ad 
-        adImg="https://assets.fatllama.com/static/img/rebrand-assets/home-page/vp-access/fat-llama-vp-money.svg"
-        textFirst="Save money"
-        textSecond="Buy less. Rent for a fraction of the cost"
+        <Ad
+          adImg="https://assets.fatllama.com/static/img/rebrand-assets/home-page/vp-access/fat-llama-vp-money.svg"
+          textFirst="Save money"
+          textSecond="Buy less. Rent for a fraction of the cost"
         />
-                <Ad 
-        adImg="https://assets.fatllama.com/static/img/rebrand-assets/home-page/vp-access/fat-llama-vp-light.svg"
-        textFirst="Help the planet"
-        textSecond="Live lighter. Reduce waste"
+        <Ad
+          adImg="https://assets.fatllama.com/static/img/rebrand-assets/home-page/vp-access/fat-llama-vp-light.svg"
+          textFirst="Help the planet"
+          textSecond="Live lighter. Reduce waste"
         />
       </div>
 
@@ -204,9 +211,8 @@ export default () => {
           <Cards />
         </div>
       </div>
-        
+
       <div className="row containeris_dydis mb-5">
-        
         <div className="eiliskumas-1 width__30rem font__size__x__large">
           <h2 className="text-center padding__1rem">Reklama</h2>
           <p>
@@ -247,10 +253,10 @@ export default () => {
           <h2 className="text-center">Rental reviews</h2>
         </div>
         <div className="containeris_dydis">
-            <RentalReviews />
-            <RentalReviews />
-            <RentalReviews />
-            <RentalReviews />
+          <RentalReviews />
+          <RentalReviews />
+          <RentalReviews />
+          <RentalReviews />
         </div>
       </div>
     </div>

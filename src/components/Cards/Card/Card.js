@@ -1,12 +1,8 @@
 import React from "react";
 import "./Card.css";
 import { AvatarImg } from "../../Avatar/Avatar";
-// import { Slider } from "../Carousel/Slider";
-import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
-// import FavoriteIcon from "@material-ui/icons/Favorite";
 import IconButton from "@material-ui/core/IconButton";
 import { Link } from "react-router-dom";
-
 import "../../../MainPage.css"
 
 const Card = (props) => {
@@ -16,8 +12,6 @@ const Card = (props) => {
   function out(e) {
     e.currentTarget.hover = "hover";
   }
-
-  // return <img src={props.normalImage} onMouseOver={over} onMouseOut={out} />;
 
   return (
     <div>
@@ -50,12 +44,10 @@ const Card = (props) => {
                 color="inherit"
                 variant="outlined"
                 onClick={props.onClickCard}
+                style={{outline: 'none'}}
               >
-                <FavoriteBorderIcon/>
-                {/* <FavoriteIcon /> */}
+                {props.favIcon}
               </IconButton>
-              {/* font-size: 2rem;
-    color: darkgray; */}
             </div>
           </div>
         </div>
@@ -63,24 +55,5 @@ const Card = (props) => {
     </div>
   );
 };
-
-// function changeBackground(e) {
-//   e.target.style.background = "red";
-// }
-
-// return (
-//   <div className="App">
-//     <button onMouseOver={changeBackground}>Hover over me!</button>
-//   </div>
-// );
-
-/* <Slider
-              first={props.imgsrc}
-              second="https://images.creativemarket.com/0.1.0/ps/7838714/300/200/m2/fpc/wm0/drzwoeyoucywok6vcgrgwkykzsgmenfi0sedfjehkl9mxmi9xt9hces0natgpjeh-.jpg?1582893209&s=4cdc78af9fdd6367ff2da340a6632732"
-              hover=""
-              className="card-img-top"
-              onMouseOver={over}
-              onMouseOut={out}
-            /> */
 
 export default Card;
