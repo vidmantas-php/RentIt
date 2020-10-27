@@ -3,9 +3,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Open Visual Studio
 ### `Make sure you have node.js installed in your device!!!`
 
-Open terminal:
+## Open terminal:
 
-## Available Scripts
 first step:
 ### `npm install`
 
