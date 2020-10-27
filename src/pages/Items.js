@@ -1,10 +1,8 @@
 import React from "react";
-// import React, { useEffect, useState } from "react";
 // import itemApi from "../api/itemApi";
 import Card from "../components/Cards/Card/Card";
 // import Loading from "../components/Loading/Loading";
 import "./Items.css";
-// import { Slider } from "../components/Carousel/Slider";
 import { CategoryCard } from "../components/Cards/CategoryCard/CategoryCard";
 import RentalReviews from "../components/RentalReviews/RentalReviews";
 import "../MainPage.css";
@@ -98,8 +96,8 @@ export default () => {
           redirect=""
         />
         <CategoryCard
-          categoryImage="https://i.pinimg.com/originals/3a/be/c3/3abec3610afbc69dbb815526a921ffd0.jpg"
-          categoryName="Electric Scooters"
+          categoryImage="https://i.pinimg.com/564x/b7/75/95/b775953923c0727458bc55a94223ce82.jpg"
+          categoryName="DJ Equipment"
           redirect=""
         />
         <CategoryCard
@@ -198,16 +196,9 @@ export default () => {
         />
       </div>
 
-      {/* <Slider
-          first="https://telefonai.eu/Failai/OLD/gopro-oficialiai-pristate-naujasias-gopro-8-ir-gopro-hero-max-veiksmo-kameras.jpg"
-          second="https://social.usq.edu.au/-/media/usq/social/study-tips/pages/desktop-background-collection-banner.ashx"
-          third="https://nodum.lt/wp-content/uploads/2019/11/cybertruck2.jpg"
-        /> */}
-
       <div className="container-fluid d-flex-justify-content-center">
         <h2 className="text-center padding__1rem">Top Items</h2>
         <div className="eilute">
-          <Cards />
           <Cards />
         </div>
       </div>

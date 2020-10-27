@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./Sidebar.css";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import AddIcon from "@material-ui/icons/Add";
-import Avatar from "@material-ui/core/Avatar";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 import db from "../../../firebase";
 import SidebarChannel from "../SidebarChannel/SidebarChannel";
-import { selectUser } from "../../../features/user/userSlice";
+// import { selectUser } from "../../../features/user/userSlice";
 
 function Sidebar() {
-  const user = useSelector(selectUser);
+  // const user = useSelector(selectUser);
   const [channels, setChannels] = useState([]);
 
   useEffect(() => {
@@ -36,17 +34,10 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar__top">
-        <h5>Chats</h5>
-        <ExpandMoreIcon />
+        <h4>Chats</h4>
+        <AddIcon onClick={handleAddChannel} className="sidebar__addChannel" />
       </div>
       <div className="sidebar__channels">
-        <div className="sidebar__channelsHeader">
-          <div className="sidebar__header">
-            <ExpandMoreIcon />
-            <h5>Text Channels</h5>
-          </div>
-          <AddIcon onClick={handleAddChannel} className="sidebar__addChannel" />
-        </div>
         <div className="sidebar__channelsList">
           {channels.map(({ id, channel }) => (
             <SidebarChannel
@@ -57,13 +48,12 @@ function Sidebar() {
           ))}
         </div>
       </div>
-      <div className="sidebar__profile">
+      {/* <div className="sidebar__profile">
         <Avatar src={user.photo} />
         <div className="sidebar__profileInfo">
           <h5>{user.displayName}</h5>
-          {/* <p>#{user.uid.substring(0, 5)}</p> */}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

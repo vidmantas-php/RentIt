@@ -18,7 +18,7 @@ export default ({ displayName }) => {
             </Link> */}
           </div>
           <div>
-            <h5 className="name__color">Hi, {displayName}</h5>
+            <p className="name__color">Hi, {displayName}</p>
           </div>
         </div>
       </div>

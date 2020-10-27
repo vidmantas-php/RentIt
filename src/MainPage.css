@@ -75,3 +75,7 @@
   font-size: 12px;
   color: darkgray;
 }
+
+.favorites__red {
+  color: red;
+}
