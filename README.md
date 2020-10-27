@@ -12,7 +12,5 @@ first step:
 second step:
 ### `npm start`
 
-### `Make sure you have node.js installed in your device!!!`
-
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
