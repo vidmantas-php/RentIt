@@ -17,9 +17,6 @@ const favoritesSlice = createSlice({
           }
         })
       },
-    // clearFavorites(state) {
-    //   return { ...state, cart: [] };
-    // },
     removeFavoritesItem(state, action) {
         return state.map(item => {
           if (item.id !== action.payload.id) {

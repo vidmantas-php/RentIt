@@ -31,7 +31,7 @@ const Card = (props) => {
           <div className="avatar">
             <Link to={props.redirect} style={{ textDecoration: "none" }}>
               <div className="text-dark">
-                <h4 className="card-title">{props.title}</h4>
+                <h5 className="card-title">{props.title}</h5>
                 <p className="card-text text-secondary">
                   {props.itemValue} eur/para
                 </p>

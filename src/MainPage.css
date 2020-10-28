@@ -79,3 +79,17 @@
 .favorites__red {
   color: red;
 }
+
+.container-fluid .eilute {
+  padding-top: 0rem !important;
+  /* padding-bottom: 5rem; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kazkas {
+  /* flex: 0 0 25% !important; */
+  /* flex: 1 0 21% !important;
+  max-width: 21% !important; */
+  padding: 1rem;
+}

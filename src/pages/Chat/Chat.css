@@ -1,73 +1,73 @@
 .chat {
-    display: flex;
-    flex-direction: column;
-    flex: 0.8;
-    /* background-color: #363a3f; */
-    background-color: aliceblue;
-    height: 77.5vh;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-  }
-  
-  .chat__messages {
-      flex: 1;
-      overflow: scroll;
-  }
-  
-  .chat__messages::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .chat__messages {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  
-  .chat__input {
-    color: lightgray;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    border-radius: 5px;
-    /* margin: 20px; */
-    /* border-top: 1px solid gray; */
-    /* background-color: #474b53; */
-  }
-  
-  .chat__input > form > input {
-    /* padding: 15px; */
-    background: transparent;
-    width: 100%;
-    border: none;
-    outline-width: 0;
-    /* color: white; */
-    color: black;
-    font-size: large;
-  }
-  
-  .chat__input > form {
-    flex: 1;
-  }
-  
-  .chat__inputButton {
-    display: none;
-  }
-  
-  .chat__inputIcons > .MuiSvgIcon-root {
-    padding: 5px;
-  }
+  display: flex;
+  flex-direction: column;
+  flex: 0.8;
+  /* background-color: #363a3f; */
+  background-color: aliceblue;
+  height: 77.5vh;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
 
-  .background__color__input {
-    /* background-color: #474b53; */
-    background-color: gainsboro;
-    padding: 6px 12px 7px;
-  }
-  
-  .margin__right__09rem {
-    margin-right: 0.9rem;
-  }
+.chat__messages {
+  flex: 1;
+  overflow: scroll;
+}
 
-  .icons__color {
-    color: #474b53;
-  }
+.chat__messages::-webkit-scrollbar {
+  display: none;
+}
+
+.chat__messages {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.chat__input {
+  color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 5px;
+  /* margin: 20px; */
+  /* border-top: 1px solid gray; */
+  /* background-color: #474b53; */
+}
+
+.chat__input > form > input {
+  /* padding: 15px; */
+  background: transparent;
+  width: 100%;
+  border: none;
+  outline-width: 0;
+  /* color: white; */
+  color: black;
+  font-size: large;
+}
+
+.chat__input > form {
+  flex: 1;
+}
+
+.chat__inputButton {
+  display: none;
+}
+
+.chat__inputIcons > .MuiSvgIcon-root {
+  padding: 5px;
+}
+
+.background__color__input {
+  /* background-color: #474b53; */
+  background-color: gainsboro;
+  padding: 6px 12px 7px;
+}
+
+.margin__right__09rem {
+  margin-right: 0.9rem;
+}
+
+.icons__color {
+  color: #474b53;
+}

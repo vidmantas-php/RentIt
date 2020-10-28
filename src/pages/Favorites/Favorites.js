@@ -30,20 +30,26 @@ const Favorites = () => {
         your favorites
       </Typography>
       <div className="display__flex">
-        {products
-          .filter((product) => product.added)
-          .map((product) => (
-            <Card
-              key={product.id}
-              imgsrc={product.imgsrc}
-              title={product.title}
-              itemValue={product.itemValue}
-              city={product.city}
-              redirect={product.redirect}
-              onClickCard={() => dispatch(removeFavoritesItem(product))}
-              favIcon={<FavoriteIcon className="favorites__red" />}
-            />
-          ))}
+        <div className="container-fluid">
+          <div className="eilute">
+            {products
+              .filter((product) => product.added)
+              .map((product) => (
+                <div className="kazkas">
+                  <Card
+                    key={product.id}
+                    imgsrc={product.imgsrc}
+                    title={product.title}
+                    itemValue={product.itemValue}
+                    city={product.city}
+                    redirect={product.redirect}
+                    onClickCard={() => dispatch(removeFavoritesItem(product))}
+                    favIcon={<FavoriteIcon className="favorites__red" />}
+                  />
+                </div>
+              ))}
+          </div>
+        </div>
       </div>
     </div>
   );

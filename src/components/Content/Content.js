@@ -10,7 +10,7 @@ import PageRules from "../../pages/PageRules/PageRules";
 import MyItems from "../../pages/MyItems/MyItems";
 import { Favorites } from "../../pages/Favorites/Favorites";
 import Chat from "../../pages/Chat/Chat";
-import "../../MainPage.css";
+import InfiniteScrollItems from "../../pages/InfiniteScrollItems/InfiniteScrollItems";
 
 export default () => (
 
@@ -51,6 +51,10 @@ export default () => (
 
     <Route exact path="/favorites">
       <Favorites />
+    </Route>
+
+    <Route exact path="/allitems">
+      <InfiniteScrollItems />
     </Route>
 
     <Route exact path="/chat">

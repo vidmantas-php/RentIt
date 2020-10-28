@@ -15,6 +15,7 @@ import {
 } from "../features/favorites/FavoritesSlice";
 import { Ad } from "../components/Ad/Ad";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import { Link } from "react-router-dom";
 
 export default () => {
   // const [items, setItems] = useState([]);
@@ -201,6 +202,9 @@ export default () => {
         <div className="eilute">
           <Cards />
         </div>
+        <Link to="/allitems" style={{ textDecoration: "none" }}>
+          <p className="text-center">More items</p>
+          </Link>
       </div>
 
       <div className="row containeris_dydis mb-5">
