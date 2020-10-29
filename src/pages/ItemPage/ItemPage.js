@@ -15,6 +15,7 @@ import StarRating from "../../components/StarRating/StarRating";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import Badge from "@material-ui/core/Badge";
 import IconButton from "@material-ui/core/IconButton";
+// import {MyFancyComponent} from "../../components/GoogleMaps/GoogleMaps";
 // import { useParams } from "react-router-dom";
 // import { items } from "../../_DATA";
 
@@ -137,6 +138,9 @@ export default () => {
                 <StarRating />
               </div>
             </div>
+            {/* <div>
+              <MyFancyComponent />
+            </div> */}
           </div>
         </div>
 {/* }})} */}

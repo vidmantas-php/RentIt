@@ -7,7 +7,7 @@ export const CategoryCard = ({ categoryImage, categoryName, redirect }) => {
       <div className="card category__card__width__margin">
         <img src={categoryImage} className="card-img-top" alt={categoryName} />
         <div>
-          <p className="card-text text-center">{categoryName}</p>
+          <p className="card-text text-center text__color__black">{categoryName}</p>
         </div>
       </div>
     </a>

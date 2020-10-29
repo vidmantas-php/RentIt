@@ -111,16 +111,17 @@ export default () => {
           categoryName="Cameras"
           redirect=""
         />
-        <CategoryCard
+        {/* <CategoryCard
           categoryImage="https://www.crisis-response.com/inc/img/blog/thumbnail/594.jpg"
           categoryName="Drones"
           redirect=""
-        />
+        /> */}
       </div>
       <div>
-        <div className="display__flex justify__content__center">
+        <div className="display__flex justify__content__center padding__05rem">
           <button
-            className="navbar-toggler dropdown-toggle margin__bottom__1rem"
+            // className="navbar-toggler dropdown-toggle margin__bottom__1rem text__color__selection font__size__1rem"
+            className="navbar-toggler margin__bottom__1rem text__color__selection font__size__1rem"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent2"
@@ -171,11 +172,11 @@ export default () => {
             categoryName="Drones"
             redirect=""
           />
-          <CategoryCard
+          {/* <CategoryCard
             categoryImage="https://www.crisis-response.com/inc/img/blog/thumbnail/594.jpg"
             categoryName="Drones"
             redirect=""
-          />
+          /> */}
         </div>
       </div>
 
