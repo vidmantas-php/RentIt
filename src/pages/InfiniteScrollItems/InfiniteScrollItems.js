@@ -4,6 +4,7 @@ import { Waypoint } from "react-waypoint";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import Card from "../../components/Cards/Card/Card";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import Categories from "../../components/Categories/Categories";
 
 const InfiniteScrolling = () => {
   const [users, setUsers] = useState([]);
@@ -40,9 +41,10 @@ const InfiniteScrolling = () => {
 
   return (
     <>
+    <Categories />
       <div className="row">
         <div className="col text-center">
-          <h2>Infinite Scrolling Loader!!!</h2>
+          <h2>Items</h2>
           <div className="container-fluid">
 
             <div className="eilute">

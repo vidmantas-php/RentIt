@@ -109,3 +109,13 @@
 .padding__05rem {
   padding: 0.5rem;
 }
+
+.containeris_dydis {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  max-width: 1400px;
+}
