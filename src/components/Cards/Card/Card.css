@@ -30,10 +30,6 @@ body {
   background: radial-gradient(#e5e5e5, #ffff, #e5e5e5);
 }
 
-.card__width {
-  width: 15rem;
-}
-
 .card:hover {
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
 }
@@ -72,5 +68,14 @@ body {
 }
 
 .card__img__height {
+  /* width: 100%; */
+  /* height: 10vw; */
+  /* height: 100%; */
   height: 150px;
+  object-fit: cover;
+}
+
+.card__width {
+  /* width: 15rem; */
+  margin: 2.5%;
 }
