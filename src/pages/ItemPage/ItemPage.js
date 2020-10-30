@@ -15,6 +15,7 @@ import StarRating from "../../components/StarRating/StarRating";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import Badge from "@material-ui/core/Badge";
 import IconButton from "@material-ui/core/IconButton";
+import LightboxComponent from "../../components/ImageLightbox/LightboxComponent";
 // import {MyFancyComponent} from "../../components/GoogleMaps/GoogleMaps";
 // import { useParams } from "react-router-dom";
 // import { items } from "../../_DATA";
@@ -47,11 +48,12 @@ export default () => {
             <h2 className="text-center padding-2-rem">El. Paspirtukas</h2>
             <div className="product-center">
               <div className="center-flex">
-                <img
+                {/* <img
                   src="https://images.creativemarket.com/0.1.0/ps/7219151/300/200/m2/fpc/wm0/t5nk3muqwpf5pcd5rrgicears5kw3c0oshvlespkdh05fhftkkzlt4vs05j82ts2-.jpg?1572428562&s=209474640e9993046a57673177887050"
                   alt="Very beautiful product"
                   className="img-height-width"
-                />
+                /> */}
+                <LightboxComponent />
               </div>
               <div>
                 <p className="text-center padding-2-rem">
