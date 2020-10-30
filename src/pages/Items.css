@@ -19,9 +19,9 @@
 
 .ad {
   flex-direction: row;
-    -webkit-box-pack: justify;
-    justify-content: space-around;
-    display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-around;
+  display: flex;
 }
 
 .flex__column {
@@ -47,14 +47,36 @@
   margin-bottom: 2rem;
 }
 
-
 /* !!! MP = MAIN PAGE !!! */
 .img-mp-size {
   width: 100%;
 }
 
+.kazkas {
+  width: 20%;
+}
+
+.space_between_05rem {
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1400px) {
+  .kazkas {
+    width: 25%;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .eiliskumas-1 {
     order: 1;
+  }
+  .kazkas {
+    width: 33%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .kazkas {
+    width: 50%;
   }
 }

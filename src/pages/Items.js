@@ -36,7 +36,6 @@ export default () => {
     return (
       <React.Fragment>
         {products.map((items) => (
-          <div>
             <div className="kazkas">
               {items.added ? (
                 <>
@@ -66,16 +65,15 @@ export default () => {
                 </>
               )}
             </div>
-          </div>
         ))}
       </React.Fragment>
     );
   }
 
   return (
-    <div>
+    <div className="containeris_dydis">
         <Categories />
-      <div className="ad margin__right__and__left__10rem margin__top__bottom__2rem">
+      <div className="ad">
         <Ad
           adImg="https://assets.fatllama.com/static/img/rebrand-assets/home-page/vp-access/fat-llama-vp-access.svg"
           textFirst="Access More"
@@ -95,7 +93,7 @@ export default () => {
 
       <div className="container-fluid d-flex-justify-content-center">
         <h2 className="text-center padding__1rem">Top Items</h2>
-        <div className="eilute">
+        <div className="containeris_dydis space_between_05rem">
           <Cards />
         </div>
         <Link to="/allitems" style={{ textDecoration: "none" }}>

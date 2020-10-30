@@ -14,8 +14,6 @@ const Card = (props) => {
   }
 
   return (
-    <div>
-      <div>
         <div className="card shadow card__width">
           <Link to={props.redirect} style={{ textDecoration: "none" }}>
             <div className="overflow">
@@ -51,8 +49,6 @@ const Card = (props) => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
   );
 };
 

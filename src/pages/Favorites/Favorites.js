@@ -15,7 +15,7 @@ const Favorites = () => {
   const products = useSelector(selectFavorites);
 
   return (
-    <div className="margin__right__and__left__10rem">
+    <div className="">
       <Typography
         className="text-center"
         component="h2"
