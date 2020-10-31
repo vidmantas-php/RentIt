@@ -1,7 +1,6 @@
 import React from "react";
 import "./ItemPage.css";
-import { Button } from "../../components/Buttons/Button/Button";
-// import { AppContext } from "../../App";
+import "../../MainPage.css";
 import "date-fns";
 import Grid from "@material-ui/core/Grid";
 import DateFnsUtils from "@date-io/date-fns";
@@ -13,12 +12,10 @@ import {
 import { AvatarImg } from "../../components/Avatar/Avatar";
 import StarRating from "../../components/StarRating/StarRating";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
-import Badge from "@material-ui/core/Badge";
-import IconButton from "@material-ui/core/IconButton";
 import LightboxComponent from "../../components/ImageLightbox/LightboxComponent";
+import { Button } from "@material-ui/core";
 // import {MyFancyComponent} from "../../components/GoogleMaps/GoogleMaps";
 // import { useParams } from "react-router-dom";
-// import { items } from "../../_DATA";
 
 export default () => {
   const [selectedDate, setSelectedDate] = React.useState(
@@ -29,76 +26,90 @@ export default () => {
     setSelectedDate(date);
   };
 
-  // const { favorites, setFavorites } = useContext(AppContext);
-
-  // const addToFavorites = () => {
-  //   setFavorites(favorites + 1);
-  // };
-  // const { id } = useParams();
-
-  // const sortedItem = items.map((todo) => <li key={todo.id}>{todo.text}</li>);
-
   return (
     <div>
       {/* {items.map((item) => { if (item.id === id) { */}
-
-      
-        <div className="item__page">
-          <div className="item__info">
-            <h2 className="text-center padding-2-rem">El. Paspirtukas</h2>
-            <div className="product-center">
-              <div className="center-flex">
-                {/* <img
-                  src="https://images.creativemarket.com/0.1.0/ps/7219151/300/200/m2/fpc/wm0/t5nk3muqwpf5pcd5rrgicears5kw3c0oshvlespkdh05fhftkkzlt4vs05j82ts2-.jpg?1572428562&s=209474640e9993046a57673177887050"
-                  alt="Very beautiful product"
-                  className="img-height-width"
-                /> */}
-                <LightboxComponent />
-              </div>
-              <div>
-                <p className="text-center padding-2-rem">
-                  <strong>Price: 10$</strong>
-                  <IconButton>
-                    <Badge
-                    // badgeContent={favorites && favorites.length}
-                    >
-                      <FavoriteBorderIcon />
-                    </Badge>
-                  </IconButton>
+      <div className="item__page">
+        <div className="item__info">
+          <h2 className="margin__left__4rem padding-2-rem">
+            Elektrinis paspirtukas Beaster Scooter BS06BL
+          </h2>
+          <div className="product-center">
+            <div>
+              <LightboxComponent />
+            </div>
+            <div>
+              <div className="display__flex">
+                <p className="margin__right">
+                  <h4 className="margin__bottom">$10</h4>a day
                 </p>
+                <p className="margin__right">
+                  <h4 className="margin__bottom">$70 </h4>a week
+                </p>
+                <p className="margin__right">
+                  <h4 className="margin__bottom">$200 </h4>a month
+                </p>
+              </div>
+              <div className="margin__top__bottom">
+                <Button variant="outlined" color="secondary">
+                  <FavoriteBorderIcon />
+                  Add to favorites
+                </Button>
+              </div>
+              <div className="margin__right__5rem">
                 <p>
-                  <strong>Description</strong>: Was certainty remaining
-                  engrossed applauded sir how discovery. Settled opinion how
-                  enjoyed greater joy adapted too shy. Now properly surprise
-                  expenses interest nor replying she she. Bore tall nay many
-                  many time yet less. Doubtful for answered one fat indulged
-                  margaret sir shutters together. Ladies so in wholly around
-                  whence in at. Warmth he up giving oppose if. Impossible is
-                  dissimilar entreaties oh on terminated. Earnest studied
-                  article country ten respect showing had. But required offering
-                  him elegance son improved informed.{" "}
+                  <h4>Description:</h4> Was certainty remaining engrossed
+                  applauded sir how discovery. Settled opinion how enjoyed
+                  greater joy adapted too shy. Now properly surprise expenses
+                  interest nor replying she she. Bore tall nay many many time
+                  yet less. Doubtful for answered one fat indulged margaret sir
+                  shutters together. Ladies so in wholly around whence in at.
+                  Warmth he up giving oppose if. Impossible is dissimilar
+                  entreaties oh on terminated. Earnest studied article country
+                  ten respect showing had. But required offering him elegance
+                  son improved informed.{" "}
                 </p>
-                <div className="center-flex">
-                  <Button variant="contained" type="submit">
-                    {" "}
-                    Delete{" "}
-                  </Button>
-                  <Button variant="contained" type="submit">
-                    {" "}
-                    Update{" "}
-                  </Button>
-                  <Button variant="contained" type="submit">
-                    {" "}
-                    Rent It{" "}
-                  </Button>
-                </div>
               </div>
+              {/* <div className="center-flex">
+                <Button variant="contained" type="submit">
+                  {" "}
+                  Delete{" "}
+                </Button>
+                <Button variant="contained" type="submit">
+                  {" "}
+                  Update{" "}
+                </Button>
+                <Button variant="contained" type="submit">
+                  {" "}
+                  Rent It{" "}
+                </Button>
+              </div> */}
             </div>
           </div>
-          <div className="item__user__info">
+        </div>
+        <div className="item__user__info">
+          {/* <div>
+              <MyFancyComponent />
+            </div> */}
+          <div className="padding-2-rem display__flex flex__direction__column align__all__items__center">
+            <div className="container__width">
+              <AvatarImg size="avatar__large" />
+            </div>
+            <div>
+              <h6 className="padding-1-rem avatar__margin__bottom__0">
+                Bill Gates
+              </h6>
+            </div>
+            <div>
+              <StarRating />
+            </div>
+          </div>
+
+          <h4>$10 per day</h4>
+          <p className="padding__0 color__grey__like">Minimum 3 days rental</p>
+          <div>
             <MuiPickersUtilsProvider utils={DateFnsUtils}>
-              <h2 className="padding-2-rem">Pasirink</h2>
-              <Grid container justify="space-around">
+              <Grid container className="display__flex flex__direction__column">
                 <KeyboardDatePicker
                   disableToolbar
                   variant="inline"
@@ -127,26 +138,13 @@ export default () => {
                 />
               </Grid>
             </MuiPickersUtilsProvider>
-            <div className="padding-2-rem">
-              <div className="container__width">
-                <AvatarImg size="avatar__large" />
-              </div>
-              <div>
-                <h6 className="text-center padding-1-rem avatar__margin__bottom__0">
-                  Bill Gates
-                </h6>
-              </div>
-              <div className="center-flex">
-                <StarRating />
-              </div>
-            </div>
-            {/* <div>
-              <MyFancyComponent />
-            </div> */}
+          </div>
+          <div className="margin__top__bottom text-center">
+            <Button variant="outlined">Request to rent</Button>
           </div>
         </div>
-{/* }})} */}
-      ,
+      </div>
+      {/* }})} */},
     </div>
   );
 };

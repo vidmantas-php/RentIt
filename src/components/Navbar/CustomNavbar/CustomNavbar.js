@@ -43,13 +43,13 @@ export default () => {
 
   return (
     <div>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div className="containeris">
-        <Link to="/items" class="navbar-brand">
+        <Link to="/items" className="navbar-brand">
             Share Things
           </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -57,10 +57,10 @@ export default () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <div className="searchas">
               <div className="searcho_laukas">
                 <input
@@ -129,7 +129,7 @@ export default () => {
             </div>
 
             <ul className="navbar-nav ml-auto">
-              <li class="nav-item active">
+              <li className="nav-item active">
                 <IconButtons 
                 linkTo="/favorites"
                 badge={products.filter(product => product.added).length}
@@ -137,7 +137,7 @@ export default () => {
                 text="Favorites"
                 />
               </li>
-              <li class="nav-item active">
+              <li className="nav-item active">
               <IconButtons 
                 linkTo="/chat"
                 badge="3"
@@ -145,14 +145,14 @@ export default () => {
                 text="Messages"
                 />
               </li>
-              <li class="nav-item active">
+              <li className="nav-item active">
               <IconButtons 
                 linkTo="/pagerules"
                 icon={<HelpIcon className="color__set__white" />}
                 text="Info"
                 />
               </li>
-              <li class="nav-item active">
+              <li className="nav-item active">
                 <AccountInfo />
               </li>
             </ul>

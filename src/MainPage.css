@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.flex__direction__column {
+  flex-direction: column;
+}
+
 .color__set__white {
   color: white;
 }
@@ -59,7 +63,7 @@
   padding: 0%;
 }
 
-.margin__left__4rem {
+.margin__left__3__2rem {
   margin-left: 3.2rem;
 }
 
@@ -105,9 +109,43 @@
 .containeris_dydis {
   display: flex;
   flex-wrap: wrap;
-  /* align-items: center; */
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   margin: auto;
   width: 100%;
   max-width: 1400px;
+}
+
+.small__images {
+  width: 180px;
+  height: 121px;
+  margin-bottom: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.margin__bottom {
+  margin-bottom: 0;
+}
+
+.margin__right {
+  margin-right: 20px;
+}
+
+.margin__left__4rem {
+  margin-left: 4rem;
+}
+
+.margin__top__bottom {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.margin__2rem {
+  margin: 2rem;
+}
+
+.margin__right__5rem {
+  margin-right: 5rem;
 }

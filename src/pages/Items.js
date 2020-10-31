@@ -73,7 +73,7 @@ export default () => {
   return (
     <div className="containeris_dydis">
         <Categories />
-      <div className="ad">
+      <div className="ad margin__2rem">
         <Ad
           adImg="https://assets.fatllama.com/static/img/rebrand-assets/home-page/vp-access/fat-llama-vp-access.svg"
           textFirst="Access More"
