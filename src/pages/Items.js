@@ -10,7 +10,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import {
   addToFavorites,
   selectFavorites,
-  removeFavoritesItem
+  removeFavoritesItem,
 } from "../features/favorites/FavoritesSlice";
 import { Ad } from "../components/Ad/Ad";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
@@ -36,35 +36,36 @@ export default () => {
     return (
       <React.Fragment>
         {products.map((items) => (
-            <div className="kazkas">
-              {items.added ? (
-                <>
-                  <Card
-                    key={items.id}
-                    imgsrc={items.imgsrc}
-                    title={items.title}
-                    itemValue={items.itemValue}
-                    city={items.city}
-                    redirect={items.redirect}
-                    onClickCard={() => dispatch(removeFavoritesItem(items))}
-                    favIcon={<FavoriteIcon className="favorites__red" />}
-                  />
-                </>
-              ) : (
-                <>
-                  <Card
-                    key={items.id}
-                    imgsrc={items.imgsrc}
-                    title={items.title}
-                    itemValue={items.itemValue}
-                    city={items.city}
-                    redirect={items.redirect}
-                    onClickCard={() => dispatch(addToFavorites(items))}
-                    favIcon={<FavoriteBorderIcon />}
-                  />
-                </>
-              )}
-            </div>
+          /* {items.map((items) => ( */
+          <div className="kazkas">
+            {items.added ? (
+              <>
+                <Card
+                  key={items.id}
+                  imgsrc={items.imgsrc}
+                  title={items.title}
+                  itemValue={items.itemValue}
+                  city={items.city}
+                  redirect={items.redirect}
+                  onClickCard={() => dispatch(removeFavoritesItem(items))}
+                  favIcon={<FavoriteIcon className="favorites__red" />}
+                />
+              </>
+            ) : (
+              <>
+                <Card
+                  key={items.id}
+                  imgsrc={items.imgsrc}
+                  title={items.title}
+                  itemValue={items.itemValue}
+                  city={items.city}
+                  redirect={items.redirect}
+                  onClickCard={() => dispatch(addToFavorites(items))}
+                  favIcon={<FavoriteBorderIcon />}
+                />
+              </>
+            )}
+          </div>
         ))}
       </React.Fragment>
     );
@@ -72,7 +73,7 @@ export default () => {
 
   return (
     <div className="containeris_dydis">
-        <Categories />
+      <Categories />
       <div className="ad margin__2rem">
         <Ad
           adImg="https://assets.fatllama.com/static/img/rebrand-assets/home-page/vp-access/fat-llama-vp-access.svg"
@@ -98,17 +99,19 @@ export default () => {
         </div>
         <Link to="/allitems" style={{ textDecoration: "none" }}>
           <p className="text-center">More items</p>
-          </Link>
+        </Link>
       </div>
 
       <div className="row containeris_dydis mb-5">
-        <div className="eiliskumas-1 width__30rem font__size__x__large">
-          <h2 className="text-center padding__1rem">Reklama</h2>
-          <p>
+        <div className="eiliskumas-1 width__30rem">
+          <h2 className="">
+            Earn money from your things
+          </h2>
+          <p className="font__size__x__large color__grey__like">
             Join our herd of lenders earning £100s each month lending their
-            belongings and equipment. Lender protection up to £25,000 per item,
-            backed by Hiscox.
+            belongings and equipment.
           </p>
+          <p className="font__size__x__large color__grey__like"> Lender protection up to £25,000 per item, backed by Hiscox.</p>
         </div>
         <div>
           <img
@@ -127,13 +130,13 @@ export default () => {
             className="img-mp-size"
           />
         </div>
-        <div className="width__30rem font__size__x__large">
-          <h2 className="text-center">Reklama</h2>
-          <p>
+        <div className="width__30rem">
+          <h2 className="">Get access to (almost) anything</h2>
+          <p className="font__size__x__large color__grey__like">
             Join our herd of lenders earning £100s each as month lending their
-            belongings and equipment. Lender protection up to £25,000 per item,
-            backed by Hiscox.
+            belongings and equipment.
           </p>
+          <p className="font__size__x__large color__grey__like"> Lender protection up to £25,000 per item, backed by Hiscox.</p>
         </div>
       </div>
 

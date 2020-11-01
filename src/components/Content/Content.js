@@ -5,7 +5,7 @@ import ItemPage from "../../pages/ItemPage/ItemPage";
 import Login from "../../pages/Login/Login";
 import Register from "../../pages/Register/Register";
 import NewItem from "../../pages/NewItem/NewItem";
-import AccountReview from "../../pages/AccountReview/AccountReview";
+import MyAccount from "../../pages/MyAccount/MyAccount";
 import PageRules from "../../pages/PageRules/PageRules";
 import MyItems from "../../pages/MyItems/MyItems";
 import { Favorites } from "../../pages/Favorites/Favorites";
@@ -38,7 +38,7 @@ export default () => (
     </Route>
 
     <Route exact path="/accountinfo">
-      <AccountReview />
+      <MyAccount />
     </Route>
 
     <Route exact path="/pagerules">

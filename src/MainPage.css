@@ -40,7 +40,7 @@
 }
 
 .font__size__x__large {
-  font-size: x-large;
+  font-size: 20px;
 }
 
 .margin__left__3percent {
@@ -125,7 +125,7 @@
 }
 
 .margin__bottom {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .margin__right {
@@ -148,4 +148,24 @@
 
 .margin__right__5rem {
   margin-right: 5rem;
+}
+
+.color__grey__like {
+  color: rgb(118, 118, 118);
+}
+
+.margin__left__5proc {
+  margin-left: 5%;
+}
+
+.margin__1rem {
+  margin: 1rem;
+}
+
+.active__background__color {
+  background-color: darkseagreen;
+}
+
+.inactive__background__color {
+  background-color: burlywood;
 }
