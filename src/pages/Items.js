@@ -72,15 +72,9 @@ export default () => {
   }
 
   return (
-<<<<<<< HEAD
     <div className="containeris px-2">
         <Categories />
       <div className="ad containeris">
-=======
-    <div className="containeris_dydis">
-      <Categories />
-      <div className="ad margin__2rem">
->>>>>>> 1b7aee17d1bc2f1cfcd0d9ac533b5b52b4f396a6
         <Ad
           adImg="https://assets.fatllama.com/static/img/rebrand-assets/home-page/vp-access/fat-llama-vp-access.svg"
           textFirst="Access More"
@@ -108,19 +102,12 @@ export default () => {
         </Link>
       </div>
 
-<<<<<<< HEAD
       <div className="row containeris mb-5">
-        <div className="eiliskumas-1 width__30rem font__size__x__large">
-          <h2 className="text-center padding__1rem">Reklama</h2>
-          <p>
-=======
-      <div className="row containeris_dydis mb-5">
         <div className="eiliskumas-1 width__30rem">
           <h2 className="">
             Earn money from your things
           </h2>
           <p className="font__size__x__large color__grey__like">
->>>>>>> 1b7aee17d1bc2f1cfcd0d9ac533b5b52b4f396a6
             Join our herd of lenders earning £100s each month lending their
             belongings and equipment.
           </p>

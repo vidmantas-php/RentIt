@@ -2,10 +2,6 @@
   display: flex;
 }
 
-.flex__direction__column {
-  flex-direction: column;
-}
-
 .color__set__white {
   color: white;
 }
@@ -106,14 +102,6 @@
   padding: 0.5rem;
 }
 
-.small__images {
-  width: 180px;
-  height: 121px;
-  margin-bottom: 6px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
 .margin__bottom {
   margin-bottom: 0 !important;
 }
@@ -138,8 +126,6 @@
 .margin__right__5rem {
   margin-right: 5rem;
 }
-<<<<<<< HEAD
-=======
 
 .color__grey__like {
   color: rgb(118, 118, 118);
@@ -160,4 +146,3 @@
 .inactive__background__color {
   background-color: burlywood;
 }
->>>>>>> 1b7aee17d1bc2f1cfcd0d9ac533b5b52b4f396a6

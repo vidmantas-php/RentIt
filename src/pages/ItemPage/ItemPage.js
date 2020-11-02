@@ -27,14 +27,13 @@ export default () => {
   };
 
   return (
-    <div>
+    <div className="containeris px-2" style={{border: "2px solid black"}}>
       {/* {items.map((item) => { if (item.id === id) { */}
-      <div className="item__page">
         <div className="item__info">
-          <h2 className="margin__left__4rem padding-2-rem">
+          <h2 className="padding-2-rem">
             Elektrinis paspirtukas Beaster Scooter BS06BL
           </h2>
-          <div className="product-center">
+          <div>
             <div>
               <LightboxComponent />
             </div>
@@ -56,7 +55,7 @@ export default () => {
                   Add to favorites
                 </Button>
               </div>
-              <div className="margin__right__5rem">
+              <div >
                 <p>
                   <h4>Description:</h4> Was certainty remaining engrossed
                   applauded sir how discovery. Settled opinion how enjoyed
@@ -104,10 +103,10 @@ export default () => {
               <StarRating />
             </div>
           </div>
-
+          <div>
           <h4>$10 per day</h4>
           <p className="padding__0 color__grey__like">Minimum 3 days rental</p>
-          <div>
+          
             <MuiPickersUtilsProvider utils={DateFnsUtils}>
               <Grid container className="display__flex flex__direction__column">
                 <KeyboardDatePicker
@@ -143,7 +142,7 @@ export default () => {
             <Button variant="outlined">Request to rent</Button>
           </div>
         </div>
-      </div>
+      
       {/* }})} */},
     </div>
   );
