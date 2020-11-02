@@ -1,9 +1,9 @@
 import HTTP from ".";
 
 export default {
-  // fetchItems() {
-  //   return HTTP.get("/items");
-  // },
+  fetchItems() {
+    return HTTP.get("/items");
+  },
     // fetchProductById(id) {
     //   return HTTP.get(`/products/${id}`);
     // },
