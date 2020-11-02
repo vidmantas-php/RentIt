@@ -10,7 +10,6 @@ export default ({ displayName }) => {
       <div className="mainMenu">
           <div>
             <Link to="/accountinfo">My account</Link>
-            <Link to="/myItems">My Items</Link>
             <Link to="/newitem">Rent Item</Link>
             {/* <Link to="#more">
               <ExpandMoreIcon />

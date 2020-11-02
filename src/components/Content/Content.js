@@ -7,7 +7,6 @@ import Register from "../../pages/Register/Register";
 import NewItem from "../../pages/NewItem/NewItem";
 import MyAccount from "../../pages/MyAccount/MyAccount";
 import PageRules from "../../pages/PageRules/PageRules";
-import MyItems from "../../pages/MyItems/MyItems";
 import { Favorites } from "../../pages/Favorites/Favorites";
 import Chat from "../../pages/Chat/Chat";
 import InfiniteScrollItems from "../../pages/InfiniteScrollItems/InfiniteScrollItems";
@@ -43,10 +42,6 @@ export default () => (
 
     <Route exact path="/pagerules">
       <PageRules />
-    </Route>
-
-    <Route exact path="/myitems">
-      <MyItems />
     </Route>
 
     <Route exact path="/favorites">
