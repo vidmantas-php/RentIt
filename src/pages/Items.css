@@ -53,16 +53,12 @@
 }
 
 .kazkas {
-  width: 20%;
-}
-
-.space_between_05rem {
-  justify-content: space-between;
+  width: 19%;
 }
 
 @media only screen and (max-width: 1400px) {
   .kazkas {
-    width: 25%;
+    width: 24%;
   }
 }
 
@@ -71,12 +67,19 @@
     order: 1;
   }
   .kazkas {
-    width: 33%;
+    width: 32%;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .kazkas {
-    width: 50%;
+    width: 49%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .kazkas {
+    width: 100%;
+    margin: 0 2% 2% 2%;
   }
 }

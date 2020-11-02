@@ -106,16 +106,6 @@
   padding: 0.5rem;
 }
 
-.containeris_dydis {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  margin: auto;
-  width: 100%;
-  max-width: 1400px;
-}
-
 .small__images {
   width: 180px;
   height: 121px;
@@ -140,7 +130,6 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
 
 .margin__2rem {
   margin: 2rem;

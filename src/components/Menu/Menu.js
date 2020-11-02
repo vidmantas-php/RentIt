@@ -8,7 +8,6 @@ export default ({ displayName }) => {
   return (
     <div>
       <div className="mainMenu">
-        <div>
           <div>
             <Link to="/accountinfo">My account</Link>
             <Link to="/myItems">My Items</Link>
@@ -20,7 +19,6 @@ export default ({ displayName }) => {
           <div>
             <p className="name__color">Hi, {displayName}</p>
           </div>
-        </div>
       </div>
     </div>
   );

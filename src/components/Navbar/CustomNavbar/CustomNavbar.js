@@ -20,6 +20,9 @@ import {
 } from "../../../features/favorites/FavoritesSlice";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 
+
+import Menu from "../../Menu/Menu";
+
 const useStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
@@ -157,6 +160,7 @@ export default () => {
               </li>
             </ul>
           </div>
+          {/* <Menu /> */}
         </div>
       </nav>
     </div>
