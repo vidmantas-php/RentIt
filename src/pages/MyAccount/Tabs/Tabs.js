@@ -6,8 +6,10 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import SettingsIcon from "@material-ui/icons/Settings";
-import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
-
+import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
+import StarRating from "../../../components/StarRating/StarRating";
+import TableHeader from "../TableData/TableHeader";
+import TableData from "../TableData/TableData";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -49,9 +51,9 @@ export default function FullWidthTabs() {
     setValue(newValue);
   };
 
-//   const handleChangeIndex = (index) => {
-//     setValue(index);
-//   };
+  //   const handleChangeIndex = (index) => {
+  //     setValue(index);
+  //   };
 
   return (
     <div>
@@ -87,79 +89,129 @@ export default function FullWidthTabs() {
               </div>
 
               <table className="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="row">{/* {comment.id} */}</th>
-                    <td><strong>Title</strong></td>
-                    <td><strong>Owner</strong></td>
-                    <td><strong>Dates used</strong></td>
-                    <td><strong>Amount paid</strong></td>
-                    <td><strong>Agreement</strong></td>
-                    <td><strong>Item status</strong></td>
-                    <td><strong>Action</strong></td>
-                  </tr>
-                </thead>
+                <TableHeader
+                  first="Title"
+                  second="Rating"
+                  third="Location"
+                  fourth="Availability"
+                  fived="Condition"
+                  sixed="Price Per Day"
+                  seventh="Status"
+                  eighth="Action"
+                />
                 <tbody>
-                  <tr>
-                    <th scope="row">{/* {comment.id} */}</th>
-                    <td>Camera</td>
-                    <td>Bill Gates</td>
-                    <td>2020.10.15 - 2020.10.19 </td>
-                    <td>$12</td>
-                    <td><PictureAsPdfIcon /></td>
-                    <td><div className="message__border__radius active__background__color">Active</div></td>
-                    <td>
-                      <SettingsIcon />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">{/* {comment.id} */}</th>
-                    <td>Camera</td>
-                    <td>Bill Gates</td>
-                    <td>2020.10.15 - 2020.10.19 </td>
-                    <td>$12</td>
-                    <td><PictureAsPdfIcon /></td>
-                    <td><div className="message__border__radius active__background__color">Active</div></td>
-                    <td>
-                      <SettingsIcon />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">{/* {comment.id} */}</th>
-                    <td>Camera</td>
-                    <td>Bill Gates</td>
-                    <td>2020.10.15 - 2020.10.19 </td>
-                    <td>$12</td>
-                    <td><PictureAsPdfIcon /></td>
-                    <td><div className="message__border__radius inactive__background__color">Inactive</div></td>
-                    <td>
-                      <SettingsIcon />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">{/* {comment.id} */}</th>
-                    <td>Camera</td>
-                    <td>Bill Gates</td>
-                    <td>2020.10.15 - 2020.10.19 </td>
-                    <td>$12</td>
-                    <td><PictureAsPdfIcon /></td>
-                    <td><div className="message__border__radius inactive__background__color">Inactive</div></td>
-                    <td>
-                      <SettingsIcon />
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">{/* {comment.id} */}</th>
-                    <td>Camera</td>
-                    <td>Bill Gates</td>
-                    <td>2020.10.15 - 2020.10.19 </td>
-                    <td>$12</td>
-                    <td><PictureAsPdfIcon /></td>
-                    <td><div className="message__border__radius active__background__color">Active</div></td>
-                    <td>
-                      <SettingsIcon />
-                    </td>
-                  </tr>
+                  <TableData
+                    first="Camera"
+                    second={<StarRating className="margin__bottom" />}
+                    third="Vilnius"
+                    fourth="Availability"
+                    fived="Available"
+                    sixed="$86"
+                    seventh={
+                      <div className="message__border__radius inactive__background__color">
+                        Inactive
+                      </div>
+                    }
+                    eighth={<SettingsIcon />}
+                  />
+                  <TableData
+                    first="Dron"
+                    second={<StarRating className="margin__bottom" />}
+                    third="Vilnius"
+                    fourth="Availability"
+                    fived="Available"
+                    sixed="$15"
+                    seventh={
+                      <div className="message__border__radius active__background__color">
+                        Active
+                      </div>
+                    }
+                    eighth={<SettingsIcon />}
+                  />
+                  <TableData
+                    first="Scooter"
+                    second={<StarRating className="margin__bottom" />}
+                    third="Vilnius"
+                    fourth="Availability"
+                    fived="Available"
+                    sixed="$48"
+                    seventh={
+                      <div className="message__border__radius inactive__background__color">
+                        Inactive
+                      </div>
+                    }
+                    eighth={<SettingsIcon />}
+                  />
+                  <TableData
+                    first="Car"
+                    second={<StarRating className="margin__bottom" />}
+                    third="Vilnius"
+                    fourth="Availability"
+                    fived="Available"
+                    sixed="$14"
+                    seventh={
+                      <div className="message__border__radius inactive__background__color">
+                        Inactive
+                      </div>
+                    }
+                    eighth={<SettingsIcon />}
+                  />
+                                    <TableData
+                    first="Camera"
+                    second={<StarRating className="margin__bottom" />}
+                    third="Vilnius"
+                    fourth="Availability"
+                    fived="Available"
+                    sixed="$8"
+                    seventh={
+                      <div className="message__border__radius active__background__color">
+                        Active
+                      </div>
+                    }
+                    eighth={<SettingsIcon />}
+                  />
+                  <TableData
+                    first="Dron"
+                  second={<StarRating className="margin__bottom" />}
+                  third="Vilnius"
+                  fourth="Availability"
+                  fived="Available"
+                  sixed="$33"
+                  seventh={
+                      <div className="message__border__radius active__background__color">
+                        Active
+                      </div>
+                    }
+                    eighth={<SettingsIcon />}
+                  />
+                  <TableData
+                    first="Scooter"
+                    second={<StarRating className="margin__bottom" />}
+                    third="Vilnius"
+                    fourth="Availability"
+                    fived="Available"
+                    sixed="$42"
+                    seventh={
+                      <div className="message__border__radius inactive__background__color">
+                        Inactive
+                      </div>
+                    }
+                    eighth={<SettingsIcon />}
+                  />
+                  <TableData
+                    first="Car"
+                    second={<StarRating className="margin__bottom" />}
+                    third="Vilnius"
+                    fourth="Availability"
+                    fived="Available"
+                    sixed="$63"
+                    seventh={
+                      <div className="message__border__radius inactive__background__color">
+                        Inactive
+                      </div>
+                    }
+                    eighth={<SettingsIcon />}
+                  />
                 </tbody>
               </table>
             </div>
@@ -167,13 +219,213 @@ export default function FullWidthTabs() {
         </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Your rents
+      <div>
+          <div className="row w-100">
+            <div className="col mb-3 col-12 text-center">
+              <div className="row">
+                <div className="col-md-6">
+                  {/* <Pagination
+                                total="10"
+                                itemsPerPage="5"
+                                currentPage="1"
+                                onPageChange={page => setCurrentPage(page)}
+                            /> */}
+                </div>
+              </div>
+
+              <table className="table table-striped">
+                <TableHeader
+                  first="Title"
+                  second="Rating"
+                  third="Owner"
+                  fourth="Dates used"
+                  fived="Amount paid"
+                  sixed="Agreement"
+                  seventh="Item status"
+                  eighth="Action"
+                />
+                <tbody>
+                  <TableData
+                    first="Camera"
+                    second={<StarRating className="margin__bottom" />}
+                    third="Bill Gates"
+                    fourth="2020.10.15 - 2020.10.19"
+                    fived="$15"
+                    sixed={<PictureAsPdfIcon />}
+                    seventh={
+                      <div className="message__border__radius active__background__color">
+                        Active
+                      </div>
+                    }
+                    eighth={<SettingsIcon />}
+                  />
+                  <TableData
+                    first="Dron"
+                    second={<StarRating className="margin__bottom" />}
+                    third="Bill Gates"
+                    fourth="2020.10.15 - 2020.10.17"
+                    fived="$63"
+                    sixed={<PictureAsPdfIcon />}
+                    seventh={
+                      <div className="message__border__radius active__background__color">
+                        Active
+                      </div>
+                    }
+                    eighth={<SettingsIcon />}
+                  />
+                  <TableData
+                    first="Scooter"
+                    second={<StarRating className="margin__bottom" />}
+                    third="Bill Gates"
+                    fourth="2020.10.15 - 2020.10.19"
+                    fived="$27"
+                    sixed={<PictureAsPdfIcon />}
+                    seventh={
+                      <div className="message__border__radius inactive__background__color">
+                        Inactive
+                      </div>
+                    }
+                    eighth={<SettingsIcon />}
+                  />
+                  <TableData
+                    first="Car"
+                    second={<StarRating className="margin__bottom" />}
+                    third="Bill Gates"
+                    fourth="2020.10.15 - 2020.10.19"
+                    fived="$60"
+                    sixed={<PictureAsPdfIcon />}
+                    seventh={
+                      <div className="message__border__radius inactive__background__color">
+                        Inactive
+                      </div>
+                    }
+                    eighth={<SettingsIcon />}
+                  />
+                                    <TableData
+                    first="Camera"
+                    second={<StarRating className="margin__bottom" />}
+                    third="Bill Gates"
+                    fourth="2020.10.15 - 2020.10.19"
+                    fived="$15"
+                    sixed={<PictureAsPdfIcon />}
+                    seventh={
+                      <div className="message__border__radius active__background__color">
+                        Active
+                      </div>
+                    }
+                    eighth={<SettingsIcon />}
+                  />
+                  <TableData
+                    first="Dron"
+                    second={<StarRating className="margin__bottom" />}
+                    third="Bill Gates"
+                    fourth="2020.10.15 - 2020.10.17"
+                    fived="$63"
+                    sixed={<PictureAsPdfIcon />}
+                    seventh={
+                      <div className="message__border__radius active__background__color">
+                        Active
+                      </div>
+                    }
+                    eighth={<SettingsIcon />}
+                  />
+                  <TableData
+                    first="Scooter"
+                    second={<StarRating className="margin__bottom" />}
+                    third="Bill Gates"
+                    fourth="2020.10.15 - 2020.10.19"
+                    fived="$27"
+                    sixed={<PictureAsPdfIcon />}
+                    seventh={
+                      <div className="message__border__radius inactive__background__color">
+                        Inactive
+                      </div>
+                    }
+                    eighth={<SettingsIcon />}
+                  />
+                  <TableData
+                    first="Car"
+                    second={<StarRating className="margin__bottom" />}
+                    third="Bill Gates"
+                    fourth="2020.10.15 - 2020.10.19"
+                    fived="$60"
+                    sixed={<PictureAsPdfIcon />}
+                    seventh={
+                      <div className="message__border__radius inactive__background__color">
+                        Inactive
+                      </div>
+                    }
+                    eighth={<SettingsIcon />}
+                  />
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </TabPanel>
       <TabPanel value={value} index={2}>
         Dashbord
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Watchlist
+      <div>
+          <div className="row w-100">
+            <div className="col mb-3 col-12 text-center">
+              <div className="row">
+                <div className="col-md-6">
+                  {/* <Pagination
+                                total="10"
+                                itemsPerPage="5"
+                                currentPage="1"
+                                onPageChange={page => setCurrentPage(page)}
+                            /> */}
+                </div>
+              </div>
+
+              <table className="table table-striped">
+                <TableHeader
+                  first="Title"
+                  second="Rating"
+                  third="Owner"
+                  fourth="Dates used"
+                  fived="Amount paid"
+                  sixed="Agreement"
+                  seventh="Item status"
+                  eighth="Action"
+                />
+                <tbody>
+                  <TableData
+                    first="Scooter"
+                    second={<StarRating className="margin__bottom" />}
+                    third="Bill Gates"
+                    fourth="2020.10.15 - 2020.10.19"
+                    fived="$27"
+                    sixed={<PictureAsPdfIcon />}
+                    seventh={
+                      <div className="message__border__radius inactive__background__color">
+                        Inactive
+                      </div>
+                    }
+                    eighth={<SettingsIcon />}
+                  />
+                  <TableData
+                    first="Car"
+                    second={<StarRating className="margin__bottom" />}
+                    third="Bill Gates"
+                    fourth="2020.10.15 - 2020.10.19"
+                    fived="$60"
+                    sixed={<PictureAsPdfIcon />}
+                    seventh={
+                      <div className="message__border__radius inactive__background__color">
+                        Inactive
+                      </div>
+                    }
+                    eighth={<SettingsIcon />}
+                  />
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </TabPanel>
       <TabPanel value={value} index={4}>
         Notifications
