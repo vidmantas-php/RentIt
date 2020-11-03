@@ -42,7 +42,7 @@ const InfiniteScrolling = () => {
   return (
     <>
     <Categories />
-      <div className="row">
+      <div className="containeris">
         <div className="col text-center">
           <h2>Items</h2>
           <div className="container-fluid">

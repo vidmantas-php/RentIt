@@ -72,9 +72,9 @@ export default () => {
   }
 
   return (
-    <div className="containeris_dydis">
-      <Categories />
-      <div className="ad margin__2rem">
+    <div className="containeris px-2">
+        <Categories />
+      <div className="ad containeris">
         <Ad
           adImg="https://assets.fatllama.com/static/img/rebrand-assets/home-page/vp-access/fat-llama-vp-access.svg"
           textFirst="Access More"
@@ -92,9 +92,9 @@ export default () => {
         />
       </div>
 
-      <div className="container-fluid d-flex-justify-content-center">
+      <div className="column">
         <h2 className="text-center padding__1rem">Top Items</h2>
-        <div className="containeris_dydis space_between_05rem">
+        <div className="containeris">
           <Cards />
         </div>
         <Link to="/allitems" style={{ textDecoration: "none" }}>
@@ -102,7 +102,7 @@ export default () => {
         </Link>
       </div>
 
-      <div className="row containeris_dydis mb-5">
+      <div className="row containeris mb-5">
         <div className="eiliskumas-1 width__30rem">
           <h2 className="">
             Earn money from your things
@@ -122,7 +122,7 @@ export default () => {
         </div>
       </div>
 
-      <div className="row containeris_dydis mb-5">
+      <div className="row containeris mb-5">
         <div>
           <img
             src="https://assets.fatllama.com/static/img/rebrand-assets/home-page/info/fat-llama-guy-on-bubble.svg"
@@ -144,7 +144,7 @@ export default () => {
         <div>
           <h2 className="text-center">Rental reviews</h2>
         </div>
-        <div className="containeris_dydis">
+        <div className="containeris">
           <RentalReviews />
           <RentalReviews />
           <RentalReviews />

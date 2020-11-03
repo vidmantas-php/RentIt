@@ -33,7 +33,7 @@ export default function ControlledAccordions() {
   };
 
   return (
-    <div>
+    <div className="pagerules_p_padding">
       <div className="p__h1__center">
         <h1>Naudojimosi taisyklės</h1>
       </div>
