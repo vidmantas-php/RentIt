@@ -12,6 +12,7 @@ import CardContent from "@material-ui/core/CardContent";
 import OutlinedInput from "@material-ui/core/OutlinedInput";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import { Button } from "../../components/Buttons/Button/Button";
+import CustomizedSteppers from "../../components/Stepper/Stepper";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -44,6 +45,7 @@ export default function FormPropsTextFields() {
   return (
     <form className={classes.root} noValidate autoComplete="off">
       <div className="form__center">
+        <CustomizedSteppers />
         <h2 className="padding__2">New Item</h2>
         <FormControl
           variant="outlined"
