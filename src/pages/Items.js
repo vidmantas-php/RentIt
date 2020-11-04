@@ -28,7 +28,7 @@ export default () => {
   //     .then(({ data }) => setItems(data))
   //     .then(setTimeout(() => setLoading(false), 1000));
   // }, []);
-
+  
   const products = useSelector(selectFavorites);
   const dispatch = useDispatch();
 

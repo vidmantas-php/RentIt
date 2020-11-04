@@ -9,7 +9,7 @@ function RentalReviews() {
       <div className="margin__16px__padding__2rem__height">
         <div className="display__flex">
             <div>
-                <AvatarImg />
+                <AvatarImg image="https://gwbcenter.imgix.net/Exhibits_and_Events/Events/2019/ForumOnLeadership/bill-gates-headshot.jpg?w=200&h=200&fit=facearea&faceindex=1&facepad=3&mask=ellipse&fm=png"/>
             </div>
             <div className="margin__left__3percent">
                 <div className="display__flex">

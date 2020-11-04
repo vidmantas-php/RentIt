@@ -92,7 +92,7 @@ export default () => {
             </div> */}
           <div className="padding-2-rem display__flex flex__direction__column align__all__items__center">
             <div className="container__width">
-              <AvatarImg size="avatar__large" />
+              <AvatarImg size="avatar__large" image="https://gwbcenter.imgix.net/Exhibits_and_Events/Events/2019/ForumOnLeadership/bill-gates-headshot.jpg?w=200&h=200&fit=facearea&faceindex=1&facepad=3&mask=ellipse&fm=png" />
             </div>
             <div>
               <h6 className="padding-1-rem avatar__margin__bottom__0">
