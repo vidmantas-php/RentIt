@@ -24,12 +24,12 @@ export default () => {
   };
 
   return (
-    <div className="display__flex">
+    <div className="d-flex">
       {user ? (
         <>
-          <div id="MyAccount" className="margin__left__5proc">
-            <div className="">
-              <div className="">
+          <div id="MyAccount" className="d-flex flex-column margin__left__5proc">
+            <div>
+              <div>
                 <div className="margin__1rem">
                   <AvatarImg size="avatar__large" image={user.photo} />
                 </div>
@@ -49,7 +49,7 @@ export default () => {
                     <p>
                       <strong>Phone: </strong>860552314
                     </p>
-                    <p className="display__flex">
+                    <p className="d-flex">
                       <strong>Rating: </strong>
                       <StarRating className="margin__bottom" /> (10)
                     </p>
@@ -92,7 +92,7 @@ export default () => {
             </div>
           </div>
 
-          <div className="account__info margin__2rem">
+          <div className="account__info d-flex flex-column margin__2rem">
             <Tabs />
           </div>
         </>

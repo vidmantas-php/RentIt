@@ -38,7 +38,7 @@ export default () => {
               <LightboxComponent />
             </div>
             <div>
-              <div className="display__flex">
+              <div className="d-flex">
                 <p className="margin__right">
                   <h4 className="margin__bottom">$10</h4>a day
                 </p>
@@ -69,28 +69,14 @@ export default () => {
                   son improved informed.{" "}
                 </p>
               </div>
-              {/* <div className="center-flex">
-                <Button variant="contained" type="submit">
-                  {" "}
-                  Delete{" "}
-                </Button>
-                <Button variant="contained" type="submit">
-                  {" "}
-                  Update{" "}
-                </Button>
-                <Button variant="contained" type="submit">
-                  {" "}
-                  Rent It{" "}
-                </Button>
-              </div> */}
             </div>
           </div>
         </div>
-        <div className="item__user__info">
+        <div className="d-flex flex-column">
           {/* <div>
               <MyFancyComponent />
             </div> */}
-          <div className="padding-2-rem display__flex flex__direction__column align__all__items__center">
+          <div className="padding-2-rem d-flex flex-column align-items-center">
             <div className="container__width">
               <AvatarImg size="avatar__large" image="https://gwbcenter.imgix.net/Exhibits_and_Events/Events/2019/ForumOnLeadership/bill-gates-headshot.jpg?w=200&h=200&fit=facearea&faceindex=1&facepad=3&mask=ellipse&fm=png" />
             </div>
@@ -108,7 +94,7 @@ export default () => {
           <p className="padding__0 color__grey__like">Minimum 3 days rental</p>
           
             <MuiPickersUtilsProvider utils={DateFnsUtils}>
-              <Grid container className="display__flex flex__direction__column">
+              <Grid container className="d-flex flex-column">
                 <KeyboardDatePicker
                   disableToolbar
                   variant="inline"

@@ -44,7 +44,7 @@ function Categories() {
         />
       </div>
       <div>
-        <div className="display__flex justify__content__center padding__05rem">
+        <div className="d-flex justify-content-center padding__05rem">
           <button
             // className="navbar-toggler dropdown-toggle margin__bottom__1rem text__color__selection font__size__1rem"
             className="navbar-toggler margin__bottom__1rem text__color__selection font__size__1rem"

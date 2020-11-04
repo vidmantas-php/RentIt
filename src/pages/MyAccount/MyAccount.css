@@ -1,16 +1,10 @@
 #MyAccount {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /* font-size: 20px; */
-  display: flex;
-  flex-direction: column;
   flex: 0.2;
-  /* background-color: #363a3f; */
   background-color: aliceblue;
 }
 
 .account__info {
-  display: flex;
-  flex-direction: column;
   flex: 0.8;
   background-color: aliceblue;
   color: black;

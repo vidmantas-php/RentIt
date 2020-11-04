@@ -10,10 +10,6 @@
   cursor: pointer;
 }
 
-.flex__direction__column {
-  flex-direction: column;
-}
-
 .img-height-width {
   width: 500px;
   height: 375px;
@@ -30,10 +26,10 @@
 }
 
 @media only screen and (max-width: 992px) {
-  .small__images {
+  /* .small__images {
   }
   .main_photo {
-  }
+  } */
   .pagrdiv_lightbox {
     flex-direction: column-reverse;
   }

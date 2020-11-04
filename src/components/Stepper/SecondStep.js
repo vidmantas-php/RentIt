@@ -11,7 +11,7 @@ export default () => {
     setPricePerDay(event.target.value);
   };
   return (
-    <div className="display__flex flex-column">
+    <div className="d-flex flex-column">
       <div>
         <FormControl
           className="width__select background__color__forms text-center"

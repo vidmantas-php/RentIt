@@ -396,4 +396,4 @@ export default function ControlledAccordions() {
       </div>
     </div>
   );
-}
+};

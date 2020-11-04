@@ -7,12 +7,12 @@ import "./RentalReviews.css";
 function RentalReviews() {
   return (
       <div className="margin__16px__padding__2rem__height">
-        <div className="display__flex">
+        <div className="d-flex">
             <div>
                 <AvatarImg image="https://gwbcenter.imgix.net/Exhibits_and_Events/Events/2019/ForumOnLeadership/bill-gates-headshot.jpg?w=200&h=200&fit=facearea&faceindex=1&facepad=3&mask=ellipse&fm=png"/>
             </div>
             <div className="margin__left__3percent">
-                <div className="display__flex">
+                <div className="d-flex">
                     <h5>Bill</h5><h5>, New York</h5>
                 </div>
                 <div>

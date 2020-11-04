@@ -45,7 +45,7 @@ function Chat() {
 
   return (
 
-    <div className="display__flex">
+    <div className="d-flex">
     {user ? (
       <>
         <Sidebar />
@@ -64,7 +64,7 @@ function Chat() {
   
         <div className="chat__input">
           <AddCircleIcon className="margin__right__09rem icons__color" fontSize="large" />
-          <form className="message__border__radius background__color__input display__flex">
+          <form className="message__border__radius background__color__input d-flex">
             <input
               value={input}
               onChange={(e) => setInput(e.target.value)}

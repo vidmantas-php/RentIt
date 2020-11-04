@@ -33,7 +33,7 @@ export default () => {
 
   return (
     <form className={classes.root} noValidate autoComplete="off">
-      <div className="form__center">
+      <div className="d-flex flex-column align-items-center">
         <FormControl
           variant="outlined"
           className="width__select background__color__forms"

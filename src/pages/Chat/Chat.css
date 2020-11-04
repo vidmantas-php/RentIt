@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   flex: 0.8;
-  /* background-color: #363a3f; */
   background-color: aliceblue;
   height: 77.5vh;
   border-top: 1px solid gray;
@@ -30,18 +29,13 @@
   justify-content: space-between;
   padding: 15px;
   border-radius: 5px;
-  /* margin: 20px; */
-  /* border-top: 1px solid gray; */
-  /* background-color: #474b53; */
 }
 
 .chat__input > form > input {
-  /* padding: 15px; */
   background: transparent;
   width: 100%;
   border: none;
   outline-width: 0;
-  /* color: white; */
   color: black;
   font-size: large;
 }
@@ -59,7 +53,6 @@
 }
 
 .background__color__input {
-  /* background-color: #474b53; */
   background-color: gainsboro;
   padding: 6px 12px 7px;
 }

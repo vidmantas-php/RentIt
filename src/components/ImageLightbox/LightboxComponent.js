@@ -74,8 +74,8 @@ class LightboxComponent extends Component {
 
     return (
       <div>
-        <div className="display__flex pagrdiv_lightbox">
-          <div className="display__flex mini_photos">
+        <div className="d-flex pagrdiv_lightbox">
+          <div className="d-flex mini_photos">
             <img
               src="https://www.techadvisor.co.uk/cmsdata/features/3668712/uk_electric_scooter_law_thumb800.jpg"
               alt="Very beautiful product"

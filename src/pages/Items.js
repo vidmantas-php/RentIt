@@ -74,7 +74,7 @@ export default () => {
   return (
     <div className="containeris px-2">
         <Categories />
-      <div className="ad containeris">
+      <div className="ad d-flex justify-content-around flex-row containeris">
         <Ad
           adImg="https://assets.fatllama.com/static/img/rebrand-assets/home-page/vp-access/fat-llama-vp-access.svg"
           textFirst="Access More"
@@ -107,11 +107,11 @@ export default () => {
           <h2 className="">
             Earn money from your things
           </h2>
-          <p className="font__size__x__large color__grey__like">
+          <p className="font__size__20px color__grey__like">
             Join our herd of lenders earning £100s each month lending their
             belongings and equipment.
           </p>
-          <p className="font__size__x__large color__grey__like"> Lender protection up to £25,000 per item, backed by Hiscox.</p>
+          <p className="font__size__20px color__grey__like"> Lender protection up to £25,000 per item, backed by Hiscox.</p>
         </div>
         <div>
           <img
@@ -132,11 +132,11 @@ export default () => {
         </div>
         <div className="width__30rem">
           <h2 className="">Get access to (almost) anything</h2>
-          <p className="font__size__x__large color__grey__like">
+          <p className="font__size__20px color__grey__like">
             Join our herd of lenders earning £100s each as month lending their
             belongings and equipment.
           </p>
-          <p className="font__size__x__large color__grey__like"> Lender protection up to £25,000 per item, backed by Hiscox.</p>
+          <p className="font__size__20px color__grey__like"> Lender protection up to £25,000 per item, backed by Hiscox.</p>
         </div>
       </div>
 
