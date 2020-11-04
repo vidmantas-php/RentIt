@@ -15,13 +15,8 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import SearchIcon from "@material-ui/icons/Search";
 import { useSelector } from 'react-redux';
-import {
-  selectFavorites,
-} from "../../../features/favorites/FavoritesSlice";
+import { selectFavorites } from "../../../features/favorites/FavoritesSlice";
 import FavoriteIcon from "@material-ui/icons/Favorite";
-
-
-import Menu from "../../Menu/Menu";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -160,7 +155,6 @@ export default () => {
               </li>
             </ul>
           </div>
-          {/* <Menu /> */}
         </div>
       </nav>
     </div>

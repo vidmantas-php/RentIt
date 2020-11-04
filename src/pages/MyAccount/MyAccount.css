@@ -23,93 +23,6 @@
   width: 300px;
 }
 
-/* MISCELLANEOUS */
-
-/* #chaptername {
-  width: 100%;
-  margin: auto;
-  border: 2px solid gray;
-  text-align: center;
-  /* background-color: cornsilk; */
-
-/* .padding__2__rem {
-  padding: 2rem;
-}
-
-.padding__2__rem__right {
-  padding-right: 2rem;
-}
-
-.number__stars {
-  display: flex;
-  flex-direction: row; */
-
-/* UPPER INFO */
-
-/* #vvardas {
-  font-size: 30px;
-} */
-
-/* #aprasymoinfo ul {
-  /* position: absolute; */
-  /* bottom: 0; */
-  /* list-style-type: none;
-  margin: 0;
-  padding: 0; */
-  /* overflow: hidden;  */
-
-/* #aprasymoinfo li {
-  float: left;
-  padding: 16px;
-  padding-left: 0;
-  padding-right: 32px;
-}
-
-#aaprasymas {
-  height: 10rem;
-  overflow: hidden;
-} */
-
-/* ITEMS DIV */
-/* 
-#itemcardsbox {
-  border: 2px solid gray;
-  display: flex;
-}
-
-.avatar__position {
-  display: flex;
-  justify-content: flex-end;
-}
-
-#searchas form {
-  display: flex;
-} */
-
-/* REVIEWS DIV */
-
-/* #reviewsname {
-  border: 2px solid gray;
-  /* flex-direction: row; */
-
-/* #reviewsname ul {
-  list-style-type: none;
-
-  margin: 0;
-  padding: 0;
-}
-
-#reviewsname li {
-  float: left;
-  padding: 5px 32px 5px 16px;
-}
-
-#reviewsname button {
-  margin-left: auto;
-}
-
-576, 768, 992, 1200 pixeliai */
-
 @media screen and (max-width: 768px) {
   #aaprasymas {
     overflow-y: auto;
@@ -119,4 +32,8 @@
 
 .margin__0__rem {
   margin: 0rem !important;
+}
+
+p {
+  padding: 0.5rem;
 }
