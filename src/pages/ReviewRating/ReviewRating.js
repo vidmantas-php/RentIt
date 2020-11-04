@@ -27,7 +27,7 @@ class ReviewRating extends Component {
         <div>
           <input type="text" />
         </div>
-        <button type="button" class="btn btn-outline-primary">
+        <button type="button" className="btn btn-outline-primary">
           Primary
         </button>
       </div>

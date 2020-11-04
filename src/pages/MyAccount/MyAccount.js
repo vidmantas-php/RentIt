@@ -9,7 +9,7 @@ import { Button } from "@material-ui/core";
 export default () => {
 
   return (
-    <div className="display__flex">
+    <div className="containeris">
       <div id="MyAccount" className="margin__left__5proc">
         <div className="">
           <div className="">
