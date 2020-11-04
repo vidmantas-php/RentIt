@@ -7,12 +7,10 @@ import IconButton from "@material-ui/core/IconButton";
 import { Link } from "react-router-dom";
 import Login from "../../../pages/Login/Login";
 import Register from "../../../pages/Register/Register";
-import Dialog from "@material-ui/core/Dialog";
-import DialogContent from "@material-ui/core/DialogContent";
-import DialogContentText from "@material-ui/core/DialogContentText";
 import { auth } from "../../../firebase";
 import { useSelector } from "react-redux";
 import { selectUser } from "../../../features/user/userSlice";
+import DialogComponent from "../../Dialog/DialogComponent";
 
 export default function AccountInfo() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -70,9 +68,6 @@ export default function AccountInfo() {
       >
         {user ? (
           <>
-            {/* <Link to="/accountinfo">
-              <MenuItem onClick={handleRegisterClickClose}>My account</MenuItem>
-            </Link> */}
             <Link to="/items">
               <MenuItem onClick={() => auth.signOut()}>Logout</MenuItem>
             </Link>
@@ -81,34 +76,21 @@ export default function AccountInfo() {
           <>
             <MenuItem onClick={handleClickOpen}>Login</MenuItem>
             <div>
-              <Dialog
-                open={open}
-                onClose={handleClickClose}
-                aria-labelledby="alert-dialog-title"
-                aria-describedby="alert-dialog-description"
-              >
-                <DialogContent>
-                  <DialogContentText id="alert-dialog-description">
-                    <Login />
-                  </DialogContentText>
-                </DialogContent>
-              </Dialog>
+              <DialogComponent
+                dialogClickHandleClose={handleClickClose}
+                dialogClickHandleOpen={open}
+                dialogInfo={<Login />}
+              />
             </div>
             <MenuItem onClick={handleRegisterClickOpen}>Register</MenuItem>
 
             <div>
-              <Dialog
-                open={openRegister}
-                onClose={handleRegisterClickClose}
-                aria-labelledby="alert-dialog-title"
-                aria-describedby="alert-dialog-description"
-              >
-                <DialogContent>
-                  <DialogContentText id="alert-dialog-description">
-                    <Register />
-                  </DialogContentText>
-                </DialogContent>
-              </Dialog>
+
+            <DialogComponent
+                dialogClickHandleClose={handleRegisterClickClose}
+                dialogClickHandleOpen={openRegister}
+                dialogInfo={<Register />}
+              />
             </div>
           </>
         )}
