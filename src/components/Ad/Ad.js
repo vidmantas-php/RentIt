@@ -3,7 +3,7 @@ import "./Ad.css";
 
 export const Ad = ({ adImg, textFirst, textSecond }) => {
   return (
-    <div className="flex__column">
+    <div className="flex-column">
       <img
         className="img__ad"
         src={adImg}

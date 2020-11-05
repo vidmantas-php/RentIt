@@ -29,7 +29,7 @@ const Favorites = () => {
         You have {products.filter((product) => product.added).length} items in
         your favorites
       </Typography>
-      <div className="display__flex">
+      <div className="d-flex">
         <div className="container-fluid">
           <div className="eilute">
             {products

@@ -10,10 +10,6 @@
   cursor: pointer;
 }
 
-.flex__direction__column {
-  flex-direction: column;
-}
-
 .img-height-width {
   width: 500px;
   height: 375px;

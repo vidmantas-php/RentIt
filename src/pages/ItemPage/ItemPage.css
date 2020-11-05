@@ -9,26 +9,10 @@
   height: 400px;
 }
 
-.paddings-for-img {
-  display: flex;
-  justify-content: center;
-}
-
 .item__info {
   width: 70%;
   border: 2px solid blueviolet;
 }
-
-.item__user__info {
-  display: flex;
-  flex-direction: column;
-  /* width: 20%; */
-}
-/* 
-.item__page {
-  display: flex !important;
-  margin-left: 7rem;
-} */
 
 .avatar__margin__bottom__0 {
   margin-bottom: 0rem;

@@ -38,7 +38,7 @@ function App() {
     <Router>
       <CustomNavbar />
       <SearchBaras />
-      <div className="page-container">
+      <div className="page-container d-flex flex-column">
         <div className="content-wrap">
         {user ? (
         <>

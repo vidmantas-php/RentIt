@@ -1,32 +1,18 @@
 import React from "react";
 import "./CustomNavbar.css";
-
 import AccountInfo from "../AccountInfo/AccountInfo";
 import { Link } from "react-router-dom";
 import { IconButtons } from "../../Buttons/IconButton/IconButton.js";
 import MailIcon from "@material-ui/icons/Mail";
 import HelpIcon from "@material-ui/icons/Help";
-
-import { makeStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
-import Dialog from "@material-ui/core/Dialog";
-import DialogActions from "@material-ui/core/DialogActions";
-import DialogContent from "@material-ui/core/DialogContent";
-import DialogTitle from "@material-ui/core/DialogTitle";
+import DialogComponent from "../../Dialog/DialogComponent";
 import SearchIcon from "@material-ui/icons/Search";
-import { useSelector } from 'react-redux';
+import { useSelector } from "react-redux";
 import { selectFavorites } from "../../../features/favorites/FavoritesSlice";
 import FavoriteIcon from "@material-ui/icons/Favorite";
-
-const useStyles = makeStyles((theme) => ({
-  container: {
-    display: "flex",
-    flexWrap: "wrap",
-  },
-}));
+import ChooseCity from "../../Dialog/Dialogs/ChooseCity";
 
 export default () => {
-  const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -37,13 +23,13 @@ export default () => {
     setOpen(false);
   };
 
-  const products = useSelector(selectFavorites)
+  const products = useSelector(selectFavorites);
 
   return (
     <div>
       <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div className="containeris">
-        <Link to="/items" className="navbar-brand">
+          <Link to="/items" className="navbar-brand">
             Share Things
           </Link>
           <button
@@ -101,26 +87,11 @@ export default () => {
               >
                 Miestas
               </button>
-              <Dialog
-                disableBackdropClick
-                disableEscapeKeyDown
-                open={open}
-                onClose={handleClose}
-              >
-                <DialogTitle>Pasirinkite Miesta!</DialogTitle>
-                <DialogContent>
-                  <form className={classes.container}></form>
-                </DialogContent>
-                <DialogActions>
-                  <Button onClick={handleClose} color="primary">
-                    Cancel
-                  </Button>
-                  <Button onClick={handleClose} color="primary">
-                    Ok
-                  </Button>
-                </DialogActions>
-              </Dialog>
-
+              <DialogComponent
+                dialogClickHandleClose={handleClose}
+                dialogClickHandleOpen={open}
+                dialogInfo={<ChooseCity />}
+              />
               <button className="searcho_mygtukas">
                 <SearchIcon className="searcho_icona" />
               </button>
@@ -128,26 +99,26 @@ export default () => {
 
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
-                <IconButtons 
-                linkTo="/favorites"
-                badge={products.filter(product => product.added).length}
-                icon={<FavoriteIcon className="color__set__white" />}
-                text="Favorites"
+                <IconButtons
+                  linkTo="/favorites"
+                  badge={products.filter((product) => product.added).length}
+                  icon={<FavoriteIcon className="color__set__white" />}
+                  text="Favorites"
                 />
               </li>
               <li className="nav-item active">
-              <IconButtons 
-                linkTo="/chat"
-                badge="3"
-                icon={<MailIcon className="color__set__white" />}
-                text="Messages"
+                <IconButtons
+                  linkTo="/chat"
+                  badge="3"
+                  icon={<MailIcon className="color__set__white" />}
+                  text="Messages"
                 />
               </li>
               <li className="nav-item active">
-              <IconButtons 
-                linkTo="/pagerules"
-                icon={<HelpIcon className="color__set__white" />}
-                text="Info"
+                <IconButtons
+                  linkTo="/pagerules"
+                  icon={<HelpIcon className="color__set__white" />}
+                  text="Info"
                 />
               </li>
               <li className="nav-item active">

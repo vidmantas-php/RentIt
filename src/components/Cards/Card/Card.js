@@ -14,7 +14,7 @@ const Card = (props) => {
   }
 
   return (
-        <div className="card shadow card__width">
+        <div className="card justify-content-center shadow card__width">
           <Link to={props.redirect} style={{ textDecoration: "none" }}>
             <div className="overflow">
               <img
@@ -37,7 +37,7 @@ const Card = (props) => {
               </div>
             </Link>
             <div>
-              <AvatarImg size="avatar__small" />
+              <AvatarImg size="avatar__small" image="https://gwbcenter.imgix.net/Exhibits_and_Events/Events/2019/ForumOnLeadership/bill-gates-headshot.jpg?w=200&h=200&fit=facearea&faceindex=1&facepad=3&mask=ellipse&fm=png" />
               <IconButton
                 color="inherit"
                 variant="outlined"

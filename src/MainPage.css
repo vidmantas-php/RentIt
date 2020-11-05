@@ -1,21 +1,9 @@
-.display__flex {
-  display: flex;
-}
-
 .color__set__white {
   color: white;
 }
 
 .color__set__black {
   color: black;
-}
-
-.align__all__items__center {
-  align-items: center;
-}
-
-.justify__content__center {
-  justify-content: center;
 }
 
 .margin__bottom__1rem {
@@ -31,11 +19,7 @@
   width: 30rem;
 }
 
-.justify__content__space__around {
-  justify-content: space-around;
-}
-
-.font__size__x__large {
+.font__size__20px {
   font-size: 20px;
 }
 
