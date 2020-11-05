@@ -18,6 +18,7 @@
   width: 500px;
   height: 375px;
   cursor: pointer;
+  object-fit: cover;
 }
 
 .mini_photos {
@@ -30,10 +31,6 @@
 }
 
 @media only screen and (max-width: 992px) {
-  .small__images {
-  }
-  .main_photo {
-  }
   .pagrdiv_lightbox {
     flex-direction: column-reverse;
   }

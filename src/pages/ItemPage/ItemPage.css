@@ -16,6 +16,7 @@
 
 .item__info {
   width: 70%;
+  border: 2px solid blueviolet;
 }
 
 .item__user__info {
