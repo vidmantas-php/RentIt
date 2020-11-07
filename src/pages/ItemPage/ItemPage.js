@@ -30,9 +30,9 @@ export default () => {
     <div className="containeris px-2" style={{border: "2px solid black"}}>
       {/* {items.map((item) => { if (item.id === id) { */}
         <div className="item__info">
-          <h2 className="padding-2-rem">
+          <div className="padding-2-rem">
             Elektrinis paspirtukas Beaster Scooter BS06BL
-          </h2>
+          </div>
           <div>
             <div>
               <LightboxComponent />

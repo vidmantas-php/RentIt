@@ -100,7 +100,7 @@ class LightboxComponent extends Component {
           </div>
           <div className="main_photo">
             <img
-              src="https://www.momables.com/wp-content/uploads/2018/04/Banana-Chips_Post.jpg"
+              src="https://www.techadvisor.co.uk/cmsdata/features/3668712/uk_electric_scooter_law_thumb800.jpg"
               alt="Very beautiful product"
               className="img-height-width"
               onClick={this.openLightbox}
