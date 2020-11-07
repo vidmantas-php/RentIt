@@ -13,6 +13,7 @@ import FirstStep from "./FirstStep";
 import SecondStep from "./SecondStep";
 import "./Steps.css"
 import ThirdStep from "./ThirdStep";
+import FourthStep from "./FourthStep";
 
 const QontoConnector = withStyles({
   alternativeLabel: {
@@ -105,10 +106,10 @@ const useStyles = makeStyles((theme) => ({
 
 function getSteps() {
   return [
-    "Main data",
-    "Price",
-    "Images",
-    "Well done",
+    "Step 1",
+    "Step 2",
+    "Step 3",
+    "Step 4",
   ];
 }
 
@@ -121,7 +122,7 @@ function getStepContent(step) {
     case 2:
       return <ThirdStep />;
     case 3:
-      return "Add something";
+      return <FourthStep />;
     default:
       return "Unknown step";
   }
@@ -160,20 +161,24 @@ export default function CustomizedSteppers() {
       </Stepper>
       <div>
         {activeStep === steps.length ? (
-          <div className="text-center">
+          <div>
+            <div className="text-center">
             <Typography className={classes.instructions}>
               All steps completed - item created!
             </Typography>
+            </div>
+            <div className="text-center">
             <Button onClick={handleReset} className={classes.button} variant="outlined">
-              Reset
+              Submit
             </Button>
+            </div>
           </div>
         ) : (
-          <div className="text-center">
+          <div>
             <Typography className={classes.instructions}>
               {getStepContent(activeStep)}
             </Typography>
-            <div>
+            <div className="text-center">
               <Button
                 disabled={activeStep === 0}
                 onClick={handleBack}
