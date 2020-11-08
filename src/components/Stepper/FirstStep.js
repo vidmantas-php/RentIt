@@ -27,7 +27,7 @@ export default () => {
   return (
     <form className={classes.root} noValidate autoComplete="off">
       <div className="d-flex justify-content-center">
-        <div className="d-flex flex-column">
+        <div className="ml-5 mr-5 d-flex flex-column">
           <h4>What's the item?</h4>
           <TextField
             required

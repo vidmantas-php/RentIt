@@ -13,7 +13,7 @@ export default () => {
 
   return (
     <div className="d-flex justify-content-center">
-      <div className="tips__width">
+      <div className="tips__width ml-5 mr-5">
         <h4 className="m-2">What’s the current value of the item?</h4>
         <p className="m-2 p-0 pt-2 pb-2 text__color__grey">
           Please set an accurate estimate — you'll only be covered for up to the

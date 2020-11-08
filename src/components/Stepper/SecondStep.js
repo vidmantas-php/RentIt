@@ -14,8 +14,7 @@ export default () => {
 
   return (
     <div className="d-flex justify-content-center">
-      <div className="d-flex flex-column">
-        <div>
+      <div className="d-flex flex-column ml-5 mr-5">
           <h4>Pick a category</h4>
           <FormControl
             variant="outlined"
@@ -39,8 +38,6 @@ export default () => {
               <MenuItem value="Laisvalaikis">Laisvalaikis</MenuItem>
             </Select>
           </FormControl>
-        </div>
-        <div>
           <h4>Describe your item</h4>
           <TextField
             id="outlined-multiline-static"
@@ -51,7 +48,6 @@ export default () => {
             variant="outlined"
             className="background__color__forms width__select"
           />
-        </div>
       </div>
       <TipsComponent
         MainInfoH2="Item detail tips:"
@@ -59,8 +55,6 @@ export default () => {
         firstTipP="Try and anticipate common questions, and include answers in your description"
         secondTipStrong="2. Don't skimp on detail"
         secondTipP="Explain what's included in the listing (and what's not), describe the condition and flag any faults."
-        // thirdTipStrong="3. Pick a strong cover photo "
-        // thirdTipP="Once uploaded, just drag images to reorder"
       />
     </div>
   );

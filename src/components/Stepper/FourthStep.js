@@ -5,7 +5,7 @@ import TextField from "@material-ui/core/TextField";
 export default () => {
   return (
     <div className="d-flex justify-content-center">
-      <div className="tips__width">
+      <div className="tips__width ml-5 mr-5">
         <h4 className="m-2">Set your rental price</h4>
         <div className="mt-2 d-flex">
           <TextField

@@ -11,7 +11,7 @@ function TipsComponent({
   thirdTipP,
 }) {
   return (
-    <div className="tips__width ml-5">
+    <div className="tips__width">
       <div className="tips__container">
         <div className="d-flex">
           <ErrorOutlineIcon className="m-2" />

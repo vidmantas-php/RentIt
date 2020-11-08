@@ -9,7 +9,16 @@ export default ({ photo, userName, userEmail, userCity, userPhone }) => {
       <div>
         <h4>Edit your profile</h4>
       </div>
-      <div className="d-flex mt-5">
+      <div className="container">
+        <div><h4>Edit your profile</h4></div>
+        <div>Main</div>
+        <div id="sidebar"></div>
+        <div id="content1"></div>
+        <div id="content2"></div>
+        <div id="content3"></div>
+        <div>footer</div>
+      </div>
+      {/* <div className="d-flex mt-5">
         <div className="p-3 d-flex flex-column">
           <div className="mb-3">
             <AvatarImg size="avatar__large" image={photo} />
@@ -87,7 +96,7 @@ export default ({ photo, userName, userEmail, userCity, userPhone }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
