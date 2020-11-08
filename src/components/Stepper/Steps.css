@@ -12,9 +12,25 @@
 }
 
 .img__width {
-  height: 200px;
+  height: 130px;
 }
 
 .background__fill {
   background-color: aliceblue !important;
+}
+
+.tips__width {
+  width: 30%;
+}
+
+.tips__container {
+  /* background-color: #f8f8f8; */
+  background-color: white;
+  /* border: 1px solid black; */
+  border-radius: 4px;
+  padding: 2rem 3rem;
+}
+
+.text__color__grey {
+  color: rgb(118, 118, 118);
 }

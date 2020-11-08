@@ -82,7 +82,7 @@ export default ({ photo, userName, userEmail, userCity, userPhone }) => {
                 Back
               </Button>
               <Button className="m-2" variant="contained" color="primary">
-                Login
+                Save
               </Button>
             </div>
           </div>

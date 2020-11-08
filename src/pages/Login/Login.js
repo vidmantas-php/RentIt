@@ -11,7 +11,7 @@ export default (props) => {
   };
 
   return (
-    <div className="login">
+    <div className="login d-flex justify-content-center align-items-center">
       <Form>
         <h2>Login</h2>
         <Form.Group controlId="formBasicEmail">
@@ -28,7 +28,7 @@ export default (props) => {
           <Form.Check type="checkbox" label="Accept Rules" />
         </Form.Group>
         <div>
-          <div className="primary__buttons">
+          <div className="primary__buttons d-flex">
             <Button variant="contained" color="primary" type="submit">
               Login
             </Button>
@@ -41,7 +41,7 @@ export default (props) => {
               Back
             </Button>
           </div>
-          <div className="google__button">
+          <div className="d-flex justify-content-center">
             <Button variant="outlined" color="primary" onClick={signIn}>
               GOOGLE LOGIN!!!
             </Button>

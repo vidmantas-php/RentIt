@@ -74,7 +74,7 @@ class LightboxComponent extends Component {
 
     return (
       <div>
-        <div className="d-flex pagrdiv_lightbox">
+        <div className="pagrdiv_lightbox">
           <div className="d-flex mini_photos">
             <img
               src="https://www.techadvisor.co.uk/cmsdata/features/3668712/uk_electric_scooter_law_thumb800.jpg"
@@ -85,6 +85,13 @@ class LightboxComponent extends Component {
             />
             <img
               src="https://www.techadvisor.co.uk/cmsdata/slideshow/3631238/best_electric_scooters_thumb1200_4-3.jpg"
+              alt="Very beautiful product"
+              className="small__images"
+              onClick={this.openLightbox}
+              id="open-lightbox"
+            />
+            <img
+              src="https://www.techadvisor.co.uk/cmsdata/features/3668712/uk_electric_scooter_law_thumb800.jpg"
               alt="Very beautiful product"
               className="small__images"
               onClick={this.openLightbox}
