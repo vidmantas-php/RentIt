@@ -54,7 +54,7 @@ export default () => {
                 ></input>
               </div>
 
-              <div class="btn-group">
+              <div className="btn-group">
                 <button
                   className="btn btn-sm dropdown-toggle"
                   type="button"

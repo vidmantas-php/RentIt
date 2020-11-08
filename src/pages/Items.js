@@ -72,7 +72,7 @@ export default () => {
   }
 
   return (
-    <div className="containeris px-2">
+    <div className="containeris">
         <Categories />
       <div className="ad d-flex justify-content-around flex-row containeris">
         <Ad
@@ -102,7 +102,7 @@ export default () => {
         </Link>
       </div>
 
-      <div className="row containeris mb-5">
+      <div className="row containeris mb-5 px-2">
         <div className="eiliskumas-1 width__30rem">
           <h2 className="">
             Earn money from your things
@@ -122,7 +122,7 @@ export default () => {
         </div>
       </div>
 
-      <div className="row containeris mb-5">
+      <div className="row containeris mb-5 px-2">
         <div>
           <img
             src="https://assets.fatllama.com/static/img/rebrand-assets/home-page/info/fat-llama-guy-on-bubble.svg"

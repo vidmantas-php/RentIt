@@ -63,13 +63,6 @@
   color: red;
 }
 
-.container-fluid .eilute {
-  padding-top: 0rem !important;
-  /* padding-bottom: 5rem; */
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .text__color__selection {
   color: #007bff;
 }

@@ -15,7 +15,7 @@ const Favorites = () => {
   const products = useSelector(selectFavorites);
 
   return (
-    <div className="">
+    <div className="containeris">
       <Typography
         className="text-center"
         component="h2"
@@ -29,9 +29,7 @@ const Favorites = () => {
         You have {products.filter((product) => product.added).length} items in
         your favorites
       </Typography>
-      <div className="d-flex">
-        <div className="container-fluid">
-          <div className="eilute">
+        <div className="containeris">
             {products
               .filter((product) => product.added)
               .map((product) => (
@@ -48,9 +46,7 @@ const Favorites = () => {
                   />
                 </div>
               ))}
-          </div>
         </div>
-      </div>
     </div>
   );
 };

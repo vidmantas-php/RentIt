@@ -14,7 +14,7 @@ const Card = (props) => {
   }
 
   return (
-        <div className="card justify-content-center shadow card__width">
+        <div className="card shadow card__width">
           <Link to={props.redirect} style={{ textDecoration: "none" }}>
             <div className="overflow">
               <img

@@ -27,7 +27,7 @@ export default () => {
   };
 
   return (
-    <div className="containeris px-2" style={{ border: "2px solid black" }}>
+    <div className="containeris px-2">
       {/* {items.map((item) => { if (item.id === id) { */}
       <div className="item__info">
         <h2 className="padding-2-rem">

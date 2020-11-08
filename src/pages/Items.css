@@ -22,12 +22,12 @@
 }
 
 .kazkas {
-  width: 19%;
+  width: 20%;
 }
 
 @media only screen and (max-width: 1400px) {
   .kazkas {
-    width: 24%;
+    width: 25%;
   }
 }
 
@@ -36,19 +36,19 @@
     order: 1;
   }
   .kazkas {
-    width: 32%;
+    width: 33.33%;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .kazkas {
-    width: 49%;
+    width: 50%;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .kazkas {
     width: 100%;
-    margin: 0 2% 2% 2%;
+    /* margin: 0 2% 2% 2%; */
   }
 }
