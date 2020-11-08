@@ -47,7 +47,7 @@ const InfiniteScrolling = () => {
           <h2>Items</h2>
           <div className="container-fluid">
 
-            <div className="eilute">
+            <div className="containeris">
               {users.map((user, idx) => (
                 <div className="kazkas">
                   <Card

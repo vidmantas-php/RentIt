@@ -6,7 +6,7 @@ function Categories() {
   return (
     <div>
       <h2 className="text-center padding__1rem">Categories</h2>
-      <div className="containeris">
+      <div className="containeris justify-content-center">
         <CategoryCard
           categoryImage="https://i.pinimg.com/originals/e7/ff/65/e7ff654cee54c6f1fe58279cb56c40ab.jpg"
           categoryName="Cameras"
