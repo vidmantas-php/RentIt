@@ -74,7 +74,7 @@ export default () => {
   return (
     <div className="containeris">
         <Categories />
-      <div className="ad d-flex justify-content-around flex-row containeris">
+      <div className="ad d-flex justify-content-around flex-row containeris mb-5">
         <Ad
           adImg="https://assets.fatllama.com/static/img/rebrand-assets/home-page/vp-access/fat-llama-vp-access.svg"
           textFirst="Access More"

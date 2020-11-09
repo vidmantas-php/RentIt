@@ -3,11 +3,11 @@ import "./CategoryCard.css";
 
 export const CategoryCard = ({ categoryImage, categoryName, redirect }) => {
   return (
-    <a href={redirect} style={{ textDecoration: "none" }} className="category__card__width">
-      <div className="card category__card__width__margin">
-        <img src={categoryImage} className="card-img-top" alt={categoryName} />
-        <div>
-          <p className="card-text text-center text__color__black">{categoryName}</p>
+    <a href={redirect} style={{ textDecoration: "none" }} className="m-2 category__card__width">
+      <div>
+        <img src={categoryImage} className="card-img-top border__radius__50proc" alt={categoryName} />
+        <div className="text-center">
+          <h5 className="text__color__black">{categoryName}</h5>
         </div>
       </div>
     </a>

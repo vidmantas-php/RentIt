@@ -4,8 +4,8 @@ import { CategoryCard } from "../Cards/CategoryCard/CategoryCard";
 
 function Categories() {
   return (
-    <div>
-      <h2 className="text-center padding__1rem">Categories</h2>
+    <div className="m-4">
+      {/* <h2 className="text-center padding__1rem">Categories</h2> */}
       <div className="containeris justify-content-center">
         <CategoryCard
           categoryImage="https://i.pinimg.com/originals/e7/ff/65/e7ff654cee54c6f1fe58279cb56c40ab.jpg"
@@ -44,7 +44,7 @@ function Categories() {
         />
       </div>
       <div>
-        <div className="d-flex justify-content-center padding__05rem">
+        <div className="d-flex justify-content-center">
           <button
             // className="navbar-toggler dropdown-toggle margin__bottom__1rem text__color__selection font__size__1rem"
             className="navbar-toggler margin__bottom__1rem text__color__selection font__size__1rem"

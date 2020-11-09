@@ -1,3 +1,49 @@
 .button__width__max__content {
-    width: max-content;
+  width: max-content;
 }
+
+.containerProfile {
+  display: grid;
+  height: 60vh;
+  grid-template-columns: 1fr 0.5fr 1.5fr;
+  grid-template-rows: 1fr 1.5fr 0.5fr;
+  grid-template-areas:
+    "top top top"
+    "sidebar content1 content2"
+    "sidebar footer footer";
+    grid-gap: 0.2rem
+}
+
+#top {
+  grid-area: top;
+}
+
+#sidebar {
+  grid-area: sidebar;
+}
+
+#content1 {
+  grid-area: content1;
+}
+
+#content2 {
+  grid-area: content2;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+
+/* @media only screen and (max-width: 550px) {
+.containerProfile {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas: 
+    "top"
+    "sidebar"
+    "content1"
+    "content2"
+    "footer";
+}
+} */

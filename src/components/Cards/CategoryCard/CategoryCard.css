@@ -1,6 +1,5 @@
 .category__card__width {
-  width: 12.5%;
-  margin-bottom: 2%;
+  width: 11%;
 }
 
 @media only screen and (max-width: 992px) {
@@ -11,4 +10,8 @@
 
 .text__color__black {
   color: black;
+}
+
+.border__radius__50proc {
+  border-radius: 50%;
 }

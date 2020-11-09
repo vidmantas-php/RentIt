@@ -77,16 +77,16 @@ export default function FullWidthTabs() {
         <div>
           <div className="row w-100">
             <div className="col mb-3 col-12 text-center">
-              <div className="row">
+              {/* <div className="row">
                 <div className="col-md-6">
-                  {/* <Pagination
+                  <Pagination
                                 total="10"
                                 itemsPerPage="5"
                                 currentPage="1"
                                 onPageChange={page => setCurrentPage(page)}
-                            /> */}
+                            />
                 </div>
-              </div>
+              </div> */}
 
               <table className="table table-striped">
                 <TableHeader
